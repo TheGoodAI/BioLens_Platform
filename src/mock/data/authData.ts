@@ -1,0 +1,48 @@
+export const signInUserData = [
+    {
+        id: '21',
+        avatar: '/img/avatars/thumb-1.jpg',
+        userName: 'Clinical Safety Scientist',
+        email: 'csscientist@thegoodai.ai',
+        authority: ['admin', 'user'],
+        password: '123Qwe',
+        accountUserName: 'admin',
+    },
+    {
+        id: '22',
+        avatar: '/img/avatars/thumb-1.jpg',
+        userName: 'Clinical Data Scientist',
+        email: 'cdscientist@thegoodai.ai',
+        authority: ['admin', 'user'],
+        password: '123Qwe',
+        accountUserName: 'admin',
+    },
+    {
+        id: '23',
+        avatar: '/img/avatars/thumb-1.jpg',
+        userName: 'Biostatistician',
+        email: 'biostatistician@thegoodai.ai',
+        authority: ['admin', 'user'],
+        password: '123Qwe',
+        accountUserName: 'admin',
+    },
+    {
+        id: '24',
+        avatar: '/img/avatars/thumb-1.jpg',
+        userName: 'Translational Scientist',
+        email: 'tscientist@thegoodai.ai',
+        authority: ['admin', 'user'],
+        password: '123Qwe',
+        accountUserName: 'admin',
+    },
+    {
+        id: '25',
+        avatar: '/img/avatars/thumb-1.jpg',
+        userName: 'Clinical Trial Manager',
+        email: 'ctmanager@thegoodai.ai',
+        authority: ['admin', 'user'],
+        password: '123Qwe',
+        accountUserName: 'admin',
+    },
+    
+]
