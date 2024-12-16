@@ -33,15 +33,15 @@ const ProjectListHeader = () => {
     return (
         <>
             <div className="flex items-center justify-between gap-4">
-                <h3>Projects</h3>
+                <h3>Patients</h3>
                 <div>
                     <Button variant="solid" onClick={() => setDialogOpen(true)}>
-                        Create project
+                        Create Patient
                     </Button>
                 </div>
             </div>
             <Dialog isOpen={dialogOpen} onClose={() => setDialogOpen(false)}>
-                <h4>Add new project</h4>
+                <h4>Add New Patient</h4>
                 <div className="mt-4">
                     <NewProjectForm onClose={() => setDialogOpen(false)} />
                 </div>

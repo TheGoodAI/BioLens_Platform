@@ -85,19 +85,19 @@ const UpcomingSchedule = () => {
         {
             id: '1',
             type: 'Meeting',
-            label: 'Daily Standup',
+            label: 'Daily Check-up',
             time: dayjs().set('hour', 10).set('minute', 0).toDate(),
         },
         {
             id: '2',
             type: 'Break',
-            label: 'Lunch Break',
+            label: 'Assessment Review',
             time: dayjs().set('hour', 12).set('minute', 0).toDate(),
         },
         {
             id: '3',
             type: 'Event',
-            label: 'Townhall',
+            label: 'Medical Procedures',
             time: dayjs().set('hour', 15).set('minute', 0).toDate(),
         },
         {

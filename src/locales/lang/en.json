@@ -2,19 +2,19 @@
     "nav": {
         "dashboard": {
             "dashboard": "Dashboard",
-            "ecommerce": "Ecommerce",
-            "analytic": "Patient Analytic",
-            "project": "Biomarker Dashboard",
+            "ecommerce": "Biomarker Dashboard",
+            "analytic": "Patient Vital Insights",
+            "project": "Patient Dashboard",
             "marketing": "CRS Analytic"
         },
         "concepts": "Concepts",
         "conceptsAi": {
             "ai": "AI",
-            "chat": "Chat",
+            "chat": "Search",
             "image": "Image"
         },
         "conceptsCustomers": {
-            "customers": "Customer",
+            "customers": "Patients Record",
             "customerList": "List",
             "customerEdit": "Edit",
             "customerCreate": "Create",
@@ -27,11 +27,11 @@
             "productCreate": "Create"
         },
         "conceptsProjects": {
-            "projects": "Projects",
-            "projectList": "List",
-            "projectDetails": "Details",
-            "projectTasks": "Tasks",
-            "projectIssue": "Issue"
+            "projects": "Patient Data",
+            "projectList": "Patient List",
+            "projectDetails": "Patient Details",
+            "projectTasks": "Patient Tasks",
+            "projectIssue": "Patient Issue"
         },
         "conceptsOrders": {
             "orders": "Orders",

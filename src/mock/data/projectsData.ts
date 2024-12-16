@@ -1,35 +1,35 @@
 const y = new Date().getFullYear()
 
 export const projectDetailsData = {
-    content: `<h5>Project overview</h5><p>Bite plants chirp at birds for gnaw the corn cob be a nyan cat, feel great about it, be annoying 24/7 poop rainbows in litter box all day sleep on my human's head cat dog hate mouse eat string barf pillow no baths hate everything cat not kitten around . Swat turds around the house chase dog then run away but pet right here, no not there, here,</p><h5>About the client</h5><p>Lick butt. Under the bed purrrrrr or attack like a vicious monster and instantly break out into full speed gallop across the house for no reason for scream for no reason at 4 am or climb leg meowing chowing and wowing. Cat gets stuck in tree firefighters try to get cat down firefighters get stuck in tree cat eats firefighters' slippers pelt around the house and up and down stairs chasing phantoms for sleep over your phone and make cute snoring noises take a deep sniff of sock then walk around with mouth half open drool sit in box, pee on walls it smells like breakfast. Cough furball kitty poochy.</p><ul><li>What the heck just happened, something feels fishy head nudges i cry and cry and cry unless you pet me, and then maybe i cry just for fun demand to have some of whatever the human is cooking, then sniff the offering and walk away lick the curtain just to be annoying the door is opening! how exciting oh, it's you, meh run off table persian cat jump eat fish. Knock dish off table head butt cant eat out of my own dish touch my tail, i shred your hand purrrr.</li><li>Pounce on unsuspecting person purr as loud as possible, be the most annoying cat that you can, and, knock everything off the table but flex claws on the human's belly and purr like a lawnmower, yet ask for petting so cats are a queer kind of folk so lick yarn hanging out of own butt yet skid on floor, crash into wall.</li><li>Meow meow you are my owner so here is a dead rat get scared by sudden appearance of cucumber leave dead animals as gifts cat jumps and falls onto the couch purrs and wakes up in a new dimension filled with kitty litter meow meow yummy there is a bunch of cats hanging around eating catnip </li></ul><img src="/img/others/article-img-1.jpg" alt="" /><h5>The goals</h5><p>Reward the chosen human with a slow blink making sure that fluff gets into the owner's eyes and sit on human cuddle no cuddle cuddle love scratch scratch. Grass smells good then cats take over the world but stare at ceiling light, sniff other cat's butt and hang jaw half open thereafter the dog smells bad. Groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff for bathe private parts with tongue then lick owner's face hit you unexpectedly. Growl at dogs in my sleep scratch the furniture inspect anything brought into the house, for pelt around the house and up and down stairs chasing phantoms x rub my belly hiss chew the plant. Licks your face mrow stare at the wall, play with food and get confused by dust. Commence midnight zoomies destroy house in 5 seconds, suddenly go on wild-eyed crazy rampage. </p><h5>Requirements</h5><p>Floof tum, tickle bum, jellybean footies curly toes no, you can't close the door, i haven't decided whether or not i wanna go out, yet hiding behind the couch until lured out by a feathery toy so chase red laser dot. Eat my own ears catching very fast laser pointer but eat fish on floor cough furball into food bowl then scratch owner for a new one use lap as chair reaches under door into adjacent room. Eat the fat cats food paw your face to wake you up in the morning. While happily ignoring when being called.</p>`,
+    content: `<h5>Patient overview</h5><p>68-year-old male patient with multiple chronic conditions including hypertension and type 2 diabetes. Regular monitoring and consistent follow-up required for optimal health management. Patient demonstrates good compliance with prescribed treatments and maintains scheduled appointments.</p><h5>About the patient</h5><p>Under continuous care since March 2019. Patient presents with a complex medical history requiring coordinated care across multiple specialties. Treatment compliance has been excellent with notable improvements in health indicators over the past two years.</p><ul><li>Cardiovascular Status: Primary diagnosis of hypertension with BP readings stabilized at 132/82 mmHg (average over past 3 months). Current medication regimen includes Lisinopril 10mg daily and Amlodipine 5mg daily. Recent echocardiogram shows improved left ventricular function with EF at 54%.</li><li>Diabetes Management: Type 2 Diabetes well-controlled with current HbA1c at 6.8%. Treatment includes Metformin 1000mg BID and Jardiance 10mg daily. CGM data shows 85% Time in Range with minimal hypoglycemic events.</li><li>Preventive Care: Completed annual health screenings including colonoscopy (2023), cardiac stress test, and immunizations. Regular monitoring of comprehensive metabolic panel and lipid profile shows stable results.</li></ul><img src="/img/others/article-img-1.jpg" alt="Patient Health Trends" /><h5>Treatment goals</h5><p>Current objectives focus on maintaining stable vital signs and optimizing medication management. Goals include sustaining BP below 135/85 mmHg, HbA1c below 7.0%, and implementing structured lifestyle modifications for improved health outcomes. Regular monitoring and periodic health assessments are essential components of the care plan.</p><h5>Care requirements</h5><p>Treatment protocol includes daily blood pressure monitoring, weekly medication compliance checks, and monthly comprehensive health evaluations. Coordination with specialists including cardiology and endocrinology maintains integrated care approach. Regular laboratory assessments and preventive screenings scheduled as per standard protocols.</p>`,
     activities: [],
     members: [],
     tasks: [],
     client: {
-        clientName: 'Acme Agency inc.',
+        clientName: 'Metro Healthcare Partners',
         skateHolder: {
-            name: 'Jeremiah Minsk',
+            name: 'Dr. Sarah Thompson',
             img: '/img/avatars/thumb-2.jpg',
         },
         projectManager: {
-            name: 'Max Alexander',
+            name: 'Nancy Chen',
             img: '/img/avatars/thumb-3.jpg',
         },
     },
     schedule: {
         startDate: 1709994804,
         dueDate: 1741502004,
-        status: 'In progress',
-        completion: 80,
+        status: 'Active',
+        completion: 85,
     },
 }
 
 export const projectListData = [
     {
         id: '27',
-        name: 'EVO SaaS',
-        category: 'Web Application',
-        desc: 'Most of you are familiar with the virtues of a programmer',
+        name: 'James Wilson',
+        category: 'Cardiology',
+        desc: 'Hypertension patient requiring regular blood pressure monitoring and medication management',
         attachmentCount: 12,
         totalTask: 32,
         completedTask: 27,
@@ -38,20 +38,20 @@ export const projectListData = [
         favourite: true,
         member: [
             {
-                name: 'Roberta Horton',
+                name: 'Dr. Sarah Thompson',
                 img: '/img/avatars/thumb-8.jpg',
             },
             {
-                name: 'Eugene Stewart',
+                name: 'Nurse Wilson',
                 img: '/img/avatars/thumb-5.jpg',
             },
         ],
     },
     {
         id: '28',
-        name: 'AIA Bill App',
-        category: 'Mobile Application',
-        desc: 'We are not shipping your machine!',
+        name: 'Mary Johnson',
+        category: 'Endocrinology',
+        desc: 'Type 2 diabetes patient with recent medication adjustments',
         attachmentCount: 5,
         totalTask: 36,
         completedTask: 15,
@@ -60,16 +60,16 @@ export const projectListData = [
         favourite: true,
         member: [
             {
-                name: 'Angelina Gotelli',
+                name: 'Dr. Roberts',
                 img: '/img/avatars/thumb-1.jpg',
             },
         ],
     },
     {
         id: '29',
-        name: 'IOP Web',
-        category: 'Web Backend Application',
-        desc: 'There are two ways to write error-free programs; only the third one works.',
+        name: 'Robert Davis',
+        category: 'Pulmonology',
+        desc: 'Chronic asthma patient requiring regular respiratory assessments and inhaler management',
         attachmentCount: 8,
         totalTask: 27,
         completedTask: 19,
@@ -78,20 +78,20 @@ export const projectListData = [
         favourite: false,
         member: [
             {
-                name: 'Max Alexander',
+                name: 'Dr. Martinez',
                 img: '/img/avatars/thumb-3.jpg',
             },
             {
-                name: 'Camila Simmmons',
+                name: 'Nurse Chen',
                 img: '/img/avatars/thumb-9.jpg',
             },
         ],
     },
     {
         id: '31',
-        name: 'Octonine POS',
-        category: 'Backend Application',
-        desc: 'Everything that can be invented has been invented.',
+        name: 'Patricia Brown',
+        category: 'Orthopedics',
+        desc: 'Post-operative knee replacement patient in rehabilitation phase',
         attachmentCount: 8,
         totalTask: 78,
         completedTask: 23,
@@ -100,32 +100,32 @@ export const projectListData = [
         favourite: true,
         member: [
             {
-                name: 'Earl Miles',
+                name: 'Dr. Anderson',
                 img: '/img/avatars/thumb-10.jpg',
             },
             {
-                name: 'Roberta Horton',
+                name: 'PT Smith',
                 img: '/img/avatars/thumb-8.jpg',
             },
             {
-                name: 'Arlene Pierce',
+                name: 'Nurse Wilson',
                 img: '/img/avatars/thumb-6.jpg',
             },
             {
-                name: 'Steve Sutton',
+                name: 'Dr. Thompson',
                 img: '/img/avatars/thumb-11.jpg',
             },
             {
-                name: 'Alvin Moreno',
+                name: 'RN Johnson',
                 img: '/img/avatars/thumb-14.jpg',
             },
         ],
     },
     {
         id: '30',
-        name: 'Evo SaaS API',
-        category: 'Backend Services',
-        desc: 'Debugging is twice as hard as writing the code in the first place.',
+        name: 'Michael Lee',
+        category: 'Neurology',
+        desc: 'Chronic migraine patient on preventive medication therapy',
         attachmentCount: 2,
         totalTask: 15,
         completedTask: 13,
@@ -134,16 +134,16 @@ export const projectListData = [
         favourite: true,
         member: [
             {
-                name: 'Steve Sutton',
+                name: 'Dr. Williams',
                 img: '/img/avatars/thumb-11.jpg',
             },
         ],
     },
     {
         id: '32',
-        name: 'Posiflex Web',
-        category: 'Frontend Web Application',
-        desc: 'The function of good software is to make the complex appear to be simple.',
+        name: 'Sarah Adams',
+        category: 'Gastroenterology',
+        desc: 'IBS patient following specialized dietary protocol with regular monitoring',
         attachmentCount: 6,
         totalTask: 18,
         completedTask: 9,
@@ -152,16 +152,16 @@ export const projectListData = [
         favourite: false,
         member: [
             {
-                name: 'Miriam Herrera',
+                name: 'Dr. Roberts',
                 img: '/img/avatars/thumb-12.jpg',
             },
         ],
     },
     {
         id: '33',
-        name: 'FoksMart APP',
-        category: 'Mobile Application',
-        desc: 'It is not about bits, bytes and protocols, but profits, losses and margins. ',
+        name: 'David Miller',
+        category: 'Primary Care',
+        desc: 'Annual physical examination and preventive care screening due',
         attachmentCount: 3,
         totalTask: 26,
         completedTask: 19,
@@ -170,20 +170,20 @@ export const projectListData = [
         favourite: false,
         member: [
             {
-                name: 'Shannon Baker',
+                name: 'Dr. Baker',
                 img: '/img/avatars/thumb-4.jpg',
             },
             {
-                name: 'Jessica Wells',
+                name: 'Nurse Wells',
                 img: '/img/avatars/thumb-8.jpg',
             },
         ],
     },
     {
         id: '34',
-        name: 'FlowBuzz SEO',
-        category: 'Marketing',
-        desc: 'Destroy couch lick the plastic bag for stare at owner accusingly then wink. ',
+        name: 'Linda White',
+        category: 'Rheumatology',
+        desc: 'Rheumatoid arthritis patient requiring ongoing pain management and monitoring',
         attachmentCount: 3,
         totalTask: 26,
         completedTask: 19,
@@ -192,20 +192,20 @@ export const projectListData = [
         favourite: false,
         member: [
             {
-                name: 'Angelina Gotelli',
+                name: 'Dr. Carter',
                 img: '/img/avatars/thumb-1.jpg',
             },
             {
-                name: 'Roberta Horton',
+                name: 'RN Wilson',
                 img: '/img/avatars/thumb-7.jpg',
             },
         ],
     },
     {
         id: '35',
-        name: 'Mind Blast APP',
-        category: 'Mobile Application',
-        desc: 'Loves cheeseburgers suddenly go on wild-eyed crazy rampage drink from the toilet.',
+        name: 'Thomas Garcia',
+        category: 'Psychiatry',
+        desc: 'Anxiety disorder patient with medication management and regular counseling',
         attachmentCount: 3,
         totalTask: 74,
         completedTask: 31,
@@ -214,11 +214,11 @@ export const projectListData = [
         favourite: false,
         member: [
             {
-                name: 'Cassandra Murray',
+                name: 'Dr. Murray',
                 img: '/img/avatars/thumb-13.jpg',
             },
             {
-                name: 'Jackie Soto',
+                name: 'Therapist Soto',
                 img: '/img/avatars/thumb-15.jpg',
             },
         ],
@@ -228,41 +228,41 @@ export const projectListData = [
 const toBeProcessCards = [
     {
         id: 'zb7zxtjctd',
-        name: 'Unable to upload file',
+        name: 'New Patient Intake - Diabetes',
         description:
-            'Scenester hashtag sustainable art party 3 wolf moon live-edge portland offal master cleanse disrupt viral palo santo tacos. Offal sriracha you probably havent heard of them vaporware glossier.',
+            'New patient presenting with uncontrolled Type 2 Diabetes. Initial A1C reading: 8.9%. Patient reports frequent urination, increased thirst, and fatigue. Previous medical records pending from primary care physician.',
         cover: '/img/others/img-13.jpg',
         members: [
             {
                 id: '1',
-                name: 'Angelina Gotelli',
-                email: 'eileen_h@hotmail.com',
+                name: 'Dr. Sarah Thompson',
+                email: 'thompson.s@healthcare.com',
                 img: '/img/avatars/thumb-1.jpg',
             },
             {
                 id: '2',
-                name: 'Jeremiah Minsk',
-                email: '',
+                name: 'Nurse Chen',
+                email: 'chen.n@healthcare.com',
                 img: '/img/avatars/thumb-2.jpg',
             },
             {
                 id: '3',
-                name: 'Max Alexander',
-                email: 'ronnie_vergas@infotech.io',
+                name: 'Dr. Roberts',
+                email: 'roberts.e@healthcare.com',
                 img: '/img/avatars/thumb-3.jpg',
             },
         ],
-        labels: ['Task', 'Live issue'],
+        labels: ['Urgent', 'New Patient'],
         attachments: [
             {
                 id: 'jubuK7XGp3',
-                name: 'mail.jpg',
+                name: 'lab_results.pdf',
                 src: '/img/others/img-13.jpg',
                 size: '36.1kb',
             },
             {
                 id: 'xsb3HCejCM',
-                name: 'mail.jpg',
+                name: 'medical_history.pdf',
                 src: '/img/others/img-14.jpg',
                 size: '55.9kb',
             },
@@ -270,10 +270,10 @@ const toBeProcessCards = [
         comments: [
             {
                 id: 'R22TqMkACm',
-                name: 'Camila Simmmons',
+                name: 'Dr. Thompson',
                 src: '/img/avatars/thumb-9.jpg',
                 message:
-                    'I am baby kitsch plaid mustache, williamsburg butcher gluten-free 3 wolf moon authentic quinoa selvage knausgaard unicorn. Palo santo viral everyday carry, heirloom tumblr raw denim yr iceland wayfarers single-origin coffee tote bag shoreditch cloud bread poke.',
+                    'Patient requires immediate intervention for glucose management. Scheduling comprehensive diabetes education and nutrition consultation. Will start on Metformin 500mg BID after baseline kidney function is assessed.',
                 date: new Date(y, 4, 20),
             },
         ],
@@ -282,35 +282,35 @@ const toBeProcessCards = [
     },
     {
         id: '7qgsduurxt',
-        name: 'Table data incorrect',
+        name: 'Abnormal Blood Pressure Readings',
         description:
-            'Extra  breve french press organic milk lungo bar. At, carajillo, saucer latte americano and shop rich french press. And barista mazagran, black, cup extraction ristretto plunger pot cinnamon café au lait.',
+            'Patient presenting with consistently elevated blood pressure readings over past week. Average readings: 162/95 mmHg. Currently on Lisinopril 10mg daily. No other symptoms reported.',
         cover: '',
         members: [
             {
                 id: '8',
-                name: 'Jessica Wells',
-                email: 'iamfred@imaze.infotech.io',
+                name: 'Dr. Wilson',
+                email: 'wilson.m@healthcare.com',
                 img: '/img/avatars/thumb-8.jpg',
             },
         ],
-        labels: ['Bug'],
+        labels: ['Priority'],
         attachments: [],
         comments: [
             {
                 id: 'Wx8FDSsVTg',
-                name: 'Arlene Pierce',
+                name: 'Nurse Martinez',
                 src: '/img/avatars/thumb-6.jpg',
                 message:
-                    'Helvetica 8-bit photo booth tumblr food truck. Enamel pin wolf tousled sartorial, brunch shoreditch skateboard beard helvetica. Plaid typewriter gastropub bespoke.',
+                    'Evening readings showing slight improvement: 158/92 mmHg. Patient confirms medication compliance.',
                 date: new Date(y, 4, 20),
             },
             {
                 id: '3AhkqqSFFr',
-                name: 'Max Alexander',
+                name: 'Dr. Wilson',
                 src: '/img/avatars/thumb-3.jpg',
                 message:
-                    'Af trust fund meggings, meditation chicharrones brunch wolf narwhal shoreditch whatever bicycle rights ramps. ',
+                    'Increasing Lisinopril to 20mg daily. Schedule follow-up in one week. Request home BP monitoring logs.',
                 date: new Date(y, 4, 20),
             },
         ],
@@ -318,33 +318,33 @@ const toBeProcessCards = [
     },
     {
         id: 'wtwgpz6csc',
-        name: 'Fix broken UI',
+        name: 'Routine Follow-up - Asthma',
         description:
-            'Air plant subway tile four loko ramps. Microdosing offal tote bag, single-origin coffee biodiesel before they sold out swag pok pok gastropub tacos letterpress.',
+            'Quarterly follow-up for asthma management. Patient reports good control with current inhaler regimen. Peak flow readings within normal range.',
         cover: '',
         members: [
             {
                 id: '13',
-                name: 'Cassandra Murray',
-                email: 'leeWheeler@infotech.io',
+                name: 'Dr. Murray',
+                email: 'murray.c@healthcare.com',
                 img: '/img/avatars/thumb-13.jpg',
             },
             {
                 id: '5',
-                name: 'Eugene Stewart',
-                email: 'joyce991@infotech.io',
+                name: 'Nurse Stewart',
+                email: 'stewart.e@healthcare.com',
                 img: '/img/avatars/thumb-5.jpg',
             },
         ],
-        labels: ['Low priority'],
+        labels: ['Routine'],
         attachments: [],
         comments: [
             {
                 id: 'bAvBdtKHNC',
-                name: 'Steve Sutton',
+                name: 'Dr. Murray',
                 src: '/img/avatars/thumb-11.jpg',
                 message:
-                    'Helvetica 8-bit photo booth tumblr food truck. Enamel pin wolf tousled sartorial, brunch shoreditch skateboard beard helvetica. Plaid typewriter gastropub bespoke.',
+                    'Pulmonary function tests stable. Continuing current medication regimen. Review proper inhaler technique at next visit.',
                 date: new Date(y, 4, 20),
             },
         ],
@@ -356,30 +356,30 @@ const toBeProcessCards = [
 const processingCards = [
     {
         id: 'ywejrdr3rn',
-        name: 'Fix dashboard layout',
+        name: 'Cardiac Monitoring Required',
         description:
-            'Biodiesel selvage letterpress 8-bit, coloring book banjo austin pabst post-ironic try-hard gluten-free tilde authentic prism man braid.',
+            'Patient experiencing intermittent chest pain with elevated blood pressure readings. Holter monitor placed for 24-hour cardiac rhythm assessment. Initial ECG shows minor ST changes.',
         cover: '',
         members: [
             {
                 id: '2',
-                name: 'Jeremiah Minsk',
+                name: 'Dr. Thompson',
                 email: '',
                 img: '/img/avatars/thumb-2.jpg',
             },
             {
                 id: '8',
-                name: 'Jessica Wells',
-                email: 'iamfred@imaze.infotech.io',
+                name: 'Nurse Wilson',
+                email: 'wilson.n@healthcare.com',
                 img: '/img/avatars/thumb-8.jpg',
             },
         ],
-        labels: ['Bug'],
+        labels: ['Urgent'],
         attachments: [],
         comments: [
             {
                 id: 'afPugkEmkp',
-                name: 'Angelina Gotelli',
+                name: 'Dr. Thompson',
                 src: '/img/avatars/thumb-1.jpg',
                 message: '',
                 date: new Date(y, 5, 16),
@@ -390,23 +390,23 @@ const processingCards = [
     },
     {
         id: 'tkBXWJGwkr',
-        name: 'New design',
+        name: 'Post-Surgery Recovery',
         description:
-            'Typewriter hell of cloud bread health goth beard mlkshk four loko.',
+            'Day 2 post-knee replacement surgery. Patient reporting moderate pain levels (5/10). Physical therapy to begin this afternoon.',
         cover: '',
         members: [
             {
                 id: '10',
-                name: 'Earl Miles',
-                email: 'brittany1134@gmail.com',
+                name: 'Dr. Miles',
+                email: 'miles.e@healthcare.com',
                 img: '/img/avatars/thumb-10.jpg',
             },
         ],
-        labels: ['Task'],
+        labels: ['In Treatment'],
         attachments: [
             {
                 id: 'NjHJhHeWrG',
-                name: 'issue.jpg',
+                name: 'post_op_xray.jpg',
                 src: '/img/others/img-16.jpg',
                 size: '46.1kb',
             },
@@ -414,10 +414,10 @@ const processingCards = [
         comments: [
             {
                 id: 'MAsPDzGwnA',
-                name: 'Max Alexander',
+                name: 'Dr. Alexander',
                 src: '/img/avatars/thumb-3.jpg',
                 message:
-                    'Af trust fund meggings, meditation chicharrones brunch wolf narwhal shoreditch whatever bicycle rights ramps. ',
+                    'PT evaluation scheduled for 2 PM. Continue current pain management protocol. Monitor wound site for any signs of infection.',
                 date: new Date(y, 4, 20),
             },
         ],
@@ -426,19 +426,19 @@ const processingCards = [
     },
     {
         id: 'VQgUDrYJYH',
-        name: 'Improve user experiences',
+        name: 'Diabetes Management Review',
         description:
-            'Java, barista, single origin, aged foam, id dripper organic at grounds id turkish. Grounds french press viennese, strong dark that extra  spoon café au lait cappuccino. Doppio, coffee, affogato, skinny eu latte, ut carajillo black crema instant dark.',
+            'Monthly diabetes follow-up appointment. Recent HbA1c: 7.2%. Patient maintains good medication compliance but reports occasional difficulty with dietary restrictions. Blood glucose logs show some elevated evening readings.',
         cover: '',
         members: [
             {
                 id: '6',
-                name: 'Arlene Pierce',
-                email: 'samanthaphil@infotech.io',
+                name: 'Dr. Pierce',
+                email: 'pierce.a@healthcare.com',
                 img: '/img/avatars/thumb-6.jpg',
             },
         ],
-        labels: ['Low priority', 'Task'],
+        labels: ['Routine', 'Follow-up'],
         attachments: [],
         comments: [],
         dueDate: new Date(y, 4, 20),
@@ -449,24 +449,24 @@ const processingCards = [
 const submittedCards = [
     {
         id: 'jzjn95g3v4',
-        name: 'Update node environment',
+        name: 'Medication Review Required',
         description:
-            'Unicorn occupy locavore pug, stumptown literally tofu irony. Af street art paleo shoreditch. Banh mi before they sold out activated charcoal.',
+            'Patient reported mild side effects from current hypertension medication. Blood pressure readings stable at 128/82. Considering adjustment to current beta-blocker dosage.',
         cover: '',
         members: [
             {
                 id: '3',
-                name: 'Max Alexander',
-                email: 'ronnie_vergas@infotech.io',
+                name: 'Dr. Alexander',
+                email: 'alexander.m@healthcare.com',
                 img: '/img/avatars/thumb-3.jpg',
             },
         ],
-        labels: ['Low priority'],
+        labels: ['Medication Review'],
         attachments: [],
         comments: [
             {
                 id: 'nBAGhJqe9v',
-                name: 'Max Alexander',
+                name: 'Dr. Alexander',
                 src: '/img/avatars/thumb-3.jpg',
                 message: '',
                 date: new Date(y, 1, 8),
@@ -477,29 +477,29 @@ const submittedCards = [
     },
     {
         id: 'ZFQDPmscwA',
-        name: 'Remove user data',
+        name: 'Lab Results for Review',
         description:
-            'Crucifix polaroid hot chicken asymmetrical wolf helvetica keytar fashion axe ramps YOLO wayfarers 90s.',
+            'Comprehensive metabolic panel and lipid profile results ready for review. Notable elevation in liver enzymes. Patient fasting compliance confirmed.',
         cover: '/img/others/img-15.jpg',
         members: [
             {
                 id: '9',
-                name: 'Camila Simmmons',
-                email: 'carolyn_h@gmail.com',
+                name: 'Dr. Simmmons',
+                email: 'simmmons.c@healthcare.com',
                 img: '/img/avatars/thumb-9.jpg',
             },
             {
                 id: '10',
-                name: 'Earl Miles',
-                email: 'brittany1134@gmail.com',
+                name: 'Dr. Miles',
+                email: 'miles.e@healthcare.com',
                 img: '/img/avatars/thumb-10.jpg',
             },
         ],
-        labels: ['Live issue'],
+        labels: ['Priority Review'],
         attachments: [
             {
                 id: 'NjHJhHeWrG',
-                name: 'issue.jpg',
+                name: 'lab_results.pdf',
                 src: '/img/others/img-15.jpg',
                 size: '42.6kb',
             },
@@ -507,10 +507,10 @@ const submittedCards = [
         comments: [
             {
                 id: 'nBAGhJqe9v',
-                name: 'Max Alexander',
+                name: 'Dr. Alexander',
                 src: '/img/avatars/thumb-3.jpg',
                 message:
-                    'Lorem Khaled Ipsum is a major key to success. They key is to have every key, the key to open every door. Im up to something. Life is what you make it, so lets make it.',
+                    'ALT and AST levels elevated to twice normal range. Recommend ultrasound of liver and repeat labs in 2 weeks. Will discuss lifestyle modifications at follow-up appointment.',
                 date: new Date(y, 1, 8),
             },
         ],
@@ -522,33 +522,33 @@ const submittedCards = [
 const completedCards = [
     {
         id: 'yhjk5679xr',
-        name: 'Ready to test',
+        name: 'Treatment Complete - Physical Therapy',
         description:
-            'Yr green juice health goth, williamsburg four dollar toast shabby chic meggings jean shorts VHS.',
+            'Patient has completed 12-week post-operative physical therapy program. All rehabilitation goals met. Range of motion restored to 95% of baseline.',
         cover: '',
         members: [
             {
                 id: '13',
-                name: 'Cassandra Murray',
-                email: 'leeWheeler@infotech.io',
+                name: 'Dr. Murray',
+                email: 'murray.c@healthcare.com',
                 img: '/img/avatars/thumb-13.jpg',
             },
             {
                 id: '9',
-                name: 'Camila Simmmons',
-                email: 'carolyn_h@gmail.com',
+                name: 'PT Simmmons',
+                email: 'simmmons.c@healthcare.com',
                 img: '/img/avatars/thumb-9.jpg',
             },
         ],
-        labels: ['Task'],
+        labels: ['Completed'],
         attachments: [],
         comments: [
             {
                 id: 'yxc5gwrXUZ',
-                name: 'Max Alexander',
+                name: 'Dr. Alexander',
                 src: '/img/avatars/thumb-3.jpg',
                 message:
-                    'True innovation often comes from the small startup who is lean enough to launch a market but lacks the heft to own it.',
+                    'Patient cleared for return to normal activities. Maintenance exercise program provided. Follow-up in 3 months.',
                 date: new Date(y, 3, 4),
             },
         ],
@@ -557,31 +557,31 @@ const completedCards = [
     },
     {
         id: 'UMgvapYVXm',
-        name: 'Slow API connection',
+        name: 'Medication Adjustment Successful',
         description:
-            'Yr green juice health goth, williamsburg four dollar toast shabby chic meggings jean shorts VHS.',
+            'Blood pressure now stabilized with new medication regimen. Average readings 122/78 mmHg over past week.',
         cover: '',
         members: [
             {
                 id: '5',
-                name: 'Eugene Stewart',
-                email: 'joyce991@infotech.io',
+                name: 'Dr. Stewart',
+                email: 'stewart.e@healthcare.com',
                 img: '/img/avatars/thumb-5.jpg',
             },
             {
                 id: '6',
-                name: 'Arlene Pierce',
-                email: 'samanthaphil@infotech.io',
+                name: 'Nurse Pierce',
+                email: 'pierce.a@healthcare.com',
                 img: '/img/avatars/thumb-6.jpg',
             },
             {
                 id: '7',
-                name: 'Roberta Horton',
-                email: 'taratarara@imaze.edu.du',
+                name: 'Nurse Horton',
+                email: 'horton.r@healthcare.com',
                 img: '/img/avatars/thumb-7.jpg',
             },
         ],
-        labels: ['Bug'],
+        labels: ['Resolved'],
         attachments: [],
         comments: [],
         dueDate: new Date(y, 7, 19),
@@ -589,19 +589,19 @@ const completedCards = [
     },
     {
         id: 'uRZNVsCmDW',
-        name: 'Login failed',
+        name: 'Diabetes Education Complete',
         description:
-            'Air plant subway tile four loko ramps. Microdosing offal tote bag, single-origin coffee biodiesel before they sold.',
+            'Patient has completed comprehensive diabetes management program. Demonstrates proper glucose monitoring technique and understanding of dietary guidelines.',
         cover: '',
         members: [
             {
                 id: '4',
-                name: 'Shannon Baker',
-                email: 'cookie_lukie@hotmail.com',
+                name: 'Nurse Baker',
+                email: 'baker.s@healthcare.com',
                 img: '/img/avatars/thumb-4.jpg',
             },
         ],
-        labels: ['Live issue'],
+        labels: ['Education Complete'],
         attachments: [],
         comments: [],
         dueDate: new Date(y, 4, 6),
@@ -609,40 +609,40 @@ const completedCards = [
     },
     {
         id: 'PBSGmhVgvS',
-        name: 'Locale incorrect',
+        name: 'Annual Physical Completed',
         description:
-            'Hoodie mustache woke pour-over you probably havent heard of them cray.',
+            'All preventive screenings completed. Immunizations updated. Health maintenance plan reviewed.',
         cover: '',
         members: [
             {
                 id: '5',
-                name: 'Eugene Stewart',
-                email: 'joyce991@infotech.io',
+                name: 'Dr. Stewart',
+                email: 'stewart.e@healthcare.com',
                 img: '/img/avatars/thumb-5.jpg',
             },
             {
                 id: '3',
-                name: 'Max Alexander',
-                email: 'ronnie_vergas@infotech.io',
+                name: 'Dr. Alexander',
+                email: 'alexander.m@healthcare.com',
                 img: '/img/avatars/thumb-3.jpg',
             },
         ],
-        labels: ['Low priority'],
+        labels: ['Routine Complete'],
         attachments: [],
         comments: [
             {
                 id: 'dNskbPFeQD',
-                name: 'Max Alexander',
+                name: 'Dr. Alexander',
                 src: '/img/avatars/thumb-3.jpg',
                 message:
-                    'Af trust fund meggings, meditation chicharrones brunch wolf narwhal shoreditch whatever bicycle rights ramps. ',
+                    'All screening results within normal limits. Schedule follow-up in one year.',
                 date: new Date(y, 4, 20),
             },
             {
                 id: 'qNzkmRZiTO',
-                name: 'Jeremiah Minsk',
+                name: 'Dr. Thompson',
                 src: '/img/avatars/thumb-2.jpg',
-                message: 'Noted!',
+                message: 'Confirmed.',
                 date: new Date(y, 4, 20),
             },
         ],
@@ -652,70 +652,70 @@ const completedCards = [
 ]
 
 export const issueData = {
-    ticketId: '#PD-127',
-    title: 'API not working',
-    createdBy: 'Angelina Gotelli',
-    underProject: 'Sprint 2',
+    ticketId: '#PT-127',
+    title: 'Abnormal Lab Results',
+    createdBy: 'Dr. Thompson',
+    underProject: 'Patient Care',
     status: 'In progress',
     priority: 'High',
-    description: `<p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-	<p>Enslave the hooman pounce on unsuspecting person or tuxedo cats always looking dapper yet poop on grasses or growl at dogs in my sleep but love blinks and purr purr purr purr yawn.</p>
-	<p>Decide to want nothing to do with my owner today being gorgeous with belly side up claw your carpet in places everyone can see - why hide my amazing artistic clawing skills?</p>
-	<p>Bite nose of your human leave fur on owners clothes so scratch my tummy actually i hate you now fight me blow up sofa in 3 seconds.</p>
+    description: `<p>Patient's recent laboratory results show significant abnormalities requiring immediate attention. Comprehensive metabolic panel indicates elevated liver enzymes (ALT: 150, AST: 165) and borderline kidney function (GFR: 58).</p>
+	<p>Current symptoms include fatigue, mild abdominal discomfort, and decreased appetite over the past two weeks. No fever or acute distress noted.</p>
+	<p>Patient's medication list has been reviewed for potential drug-induced liver injury. Currently taking: Lisinopril 10mg daily, Metformin 1000mg BID, Atorvastatin 40mg daily.</p>
+	<p>Family history significant for autoimmune hepatitis in mother. No recent alcohol use or exposure to hepatotoxic substances reported.</p>
 	`,
     dueDate: 1742795479,
     assignees: [
         {
             id: '2',
-            name: 'Jeremiah Minsk',
-            email: 'terrance_moreno@infotech.io',
+            name: 'Dr. Thompson',
+            email: 'thompson.s@healthcare.com',
             img: '/img/avatars/thumb-2.jpg',
         },
         {
             id: '3',
-            name: 'Max Alexander',
-            email: 'ronnie_vergas@infotech.io',
+            name: 'Dr. Alexander',
+            email: 'alexander.m@healthcare.com',
             img: '/img/avatars/thumb-3.jpg',
         },
     ],
     labels: [
         {
             id: '1',
-            title: 'Bug',
+            title: 'Urgent',
         },
         {
             id: '2',
-            title: 'Live issue',
+            title: 'Lab Review',
         },
     ],
     comments: [
         {
             id: 'Wx8FDSsVTg',
-            name: 'Arlene Pierce',
+            name: 'Nurse Pierce',
             src: '/img/avatars/thumb-6.jpg',
             message:
-                'Helvetica 8-bit photo booth tumblr food truck. Enamel pin wolf tousled sartorial, brunch shoreditch skateboard beard helvetica. Plaid typewriter gastropub bespoke.',
+                'Patient contacted and scheduled for follow-up appointment tomorrow at 10 AM. Fasting labs will be repeated.',
             date: new Date(y, 4, 20),
         },
         {
             id: '3AhkqqSFFr',
-            name: 'Roberta Horton',
+            name: 'Dr. Wilson',
             src: '/img/avatars/thumb-7.jpg',
             message:
-                '<strong>@Angelina</strong> One of the main causes of the fall of the Roman Empire was that-lacking zero-they had no way to indicate successful termination of their C programs. ',
+                '<strong>@Dr.Thompson</strong> Recommending temporary discontinuation of atorvastatin pending further evaluation.',
             date: new Date(y, 4, 20),
         },
     ],
     attachments: [
         {
             id: 'jubuK7XGp3',
-            name: 'mail.jpg',
+            name: 'lab_results.pdf',
             src: '/img/others/img-13.jpg',
             size: '36.1kb',
         },
         {
             id: 'NjHJhHeWrG',
-            name: 'issue.jpg',
+            name: 'previous_labs.pdf',
             src: '/img/others/img-16.jpg',
             size: '46.1kb',
         },
@@ -724,113 +724,113 @@ export const issueData = {
         {
             type: 'UPDATE-TICKET',
             dateTime: 1646580000,
-            ticket: 'PD-127',
+            ticket: 'PT-127',
             status: 1,
-            userName: 'Angelina Gotelli',
+            userName: 'Dr. Thompson',
             userImg: '',
         },
         {
             type: 'COMMENT',
             dateTime: 1646578417,
-            userName: 'Arlene Pierce',
+            userName: 'Nurse Pierce',
             userImg: '/img/avatars/thumb-1.jpg',
-            comment: `Helvetica 8-bit photo booth tumblr food truck. Enamel pin wolf tousled sartorial, brunch shoreditch skateboard beard helvetica. Plaid typewriter gastropub bespoke.`,
+            comment: `Patient scheduled for follow-up tomorrow. Labs ordered.`,
         },
         {
             type: 'ADD-TAGS-TO-TICKET',
             dateTime: 1646574027,
-            userName: 'Eugene Stewart',
-            tags: ['Live Issue', 'Bug'],
+            userName: 'Dr. Stewart',
+            tags: ['Urgent', 'Lab Review'],
         },
         {
             type: 'ADD-FILES-TO-TICKET',
             dateTime: 1646569123,
-            userName: 'Shannon Baker',
-            files: ['document.csv'],
-            ticket: 'PD-1092',
+            userName: 'Nurse Baker',
+            files: ['lab_results.pdf'],
+            ticket: 'PT-1092',
         },
         {
             type: 'COMMENT-MENTION',
             dateTime: 1646565473,
-            userName: 'Roberta Horton',
+            userName: 'Dr. Wilson',
             userImg: '/img/avatars/thumb-7.jpg',
-            comment: `<strong>@Angelina</strong> One of the main causes of the fall of the Roman Empire was that-lacking zero-they had no way to indicate successful termination of their C programs. `,
+            comment: `<strong>@Dr.Thompson</strong> Recommending temporary discontinuation of atorvastatin pending further evaluation.`,
         },
         {
             type: 'ASSIGN-TICKET',
             dateTime: 1646554397,
-            userName: 'Lee Wheeler',
-            assignee: 'Alvin Moreno',
-            ticket: 'PD-1092',
+            userName: 'Dr. Wheeler',
+            assignee: 'Dr. Moreno',
+            ticket: 'PT-1092',
         },
     ],
 }
 
 export const scrumboardData = {
-    'To Do': toBeProcessCards,
-    'In Progress': processingCards,
-    'To Review': submittedCards,
-    Completed: completedCards,
+    'New Patients': toBeProcessCards,
+    'In Treatment': processingCards,
+    'For Review': submittedCards,
+    Discharged: completedCards,
 }
 
 export const taskBugFix = [
     {
         id: '0a2ff03d-1b61-4ab0-aa43-e5c7f4578a79',
-        name: 'Unable to upload file',
+        name: 'Blood Pressure Check Required',
         dueDate: '2024-08-05T00:00:00.000Z',
         checked: false,
         progress: 'In Progress',
         priority: 'High',
         assignee: {
-            name: 'Jessica Wells',
+            name: 'Nurse Wells',
             img: '/img/avatars/thumb-8.jpg',
         },
     },
     {
         id: 'da1d38c9-e7ad-4d7d-88d4-bc88e152d10e',
-        name: 'Error in database query',
+        name: 'Glucose Level Monitoring',
         dueDate: '2024-07-15T00:00:00.000Z',
         checked: true,
         progress: 'Completed',
         priority: 'Medium',
         assignee: {
-            name: 'Jeremiah Minsk',
+            name: 'Dr. Thompson',
             img: '/img/avatars/thumb-2.jpg',
         },
     },
     {
         id: 'cd820d94-aa38-40f0-97ab-2a5c82f3c701',
-        name: 'Authentication problem',
+        name: 'Heart Rate Monitoring',
         dueDate: '2024-09-20T00:00:00.000Z',
         checked: false,
         progress: 'In Progress',
         priority: 'High',
         assignee: {
-            name: 'Earl Miles',
+            name: 'Dr. Miles',
             img: '/img/avatars/thumb-10.jpg',
         },
     },
     {
         id: 'f5bfcff3-975c-4b22-a49b-1eeb8a3c03ec',
-        name: 'Bug in search functionality',
+        name: 'Temperature Check',
         dueDate: '2024-09-05T00:00:00.000Z',
         checked: false,
         progress: 'In Progress',
         priority: 'High',
         assignee: {
-            name: 'Max Alexander',
+            name: 'Nurse Alexander',
             img: '/img/avatars/thumb-3.jpg',
         },
     },
     {
         id: 'c773847d-7f60-4d27-b3b0-6f61915e9b1a',
-        name: 'Compatibility issue with Firefox',
+        name: 'Respiratory Rate Assessment',
         dueDate: '2024-07-25T00:00:00.000Z',
         checked: true,
         progress: 'Completed',
         priority: 'Medium',
         assignee: {
-            name: 'Angelina Gotelli',
+            name: 'Dr. Gotelli',
             img: '/img/avatars/thumb-1.jpg',
         },
     },
@@ -839,49 +839,49 @@ export const taskBugFix = [
 export const taskDevelopment = [
     {
         id: '9ff33d5e-2f1c-4b20-b8ae-2241ed9cc624',
-        name: 'Performance optimization',
+        name: 'Medication Review',
         dueDate: '2024-08-30T00:00:00.000Z',
         checked: false,
         progress: 'Pending',
         priority: 'Medium',
         assignee: {
-            name: 'Jeremiah Minsk',
+            name: 'Dr. Thompson',
             img: '/img/avatars/thumb-2.jpg',
         },
     },
     {
         id: 'a6951cbb-fb0d-4223-b73a-8b8b9e40f0d2',
-        name: 'Payment gateway integration',
+        name: 'Physical Therapy Session',
         dueDate: '2024-10-15T00:00:00.000Z',
         checked: false,
         progress: 'Pending',
         priority: 'Low',
         assignee: {
-            name: 'Jeremiah Minsk',
+            name: 'PT Thompson',
             img: '/img/avatars/thumb-2.jpg',
         },
     },
     {
         id: 'b671d721-4d5e-4b63-8827-739e8d5cb22c',
-        name: 'Update user profile page layout',
+        name: 'Update Treatment Plan',
         dueDate: '2024-08-10T00:00:00.000Z',
         checked: false,
         progress: 'In Progress',
         priority: 'High',
         assignee: {
-            name: 'Max Alexander',
+            name: 'Dr. Alexander',
             img: '/img/avatars/thumb-3.jpg',
         },
     },
     {
         id: 'f4d29527-84e6-4702-92d6-805b6a703dc8',
-        name: 'Enhance security measures',
+        name: 'Patient Education Session',
         dueDate: '2024-08-20T00:00:00.000Z',
         checked: false,
         progress: 'Pending',
         priority: 'Medium',
         assignee: {
-            name: 'Arlene Pierce',
+            name: 'Nurse Pierce',
             img: '/img/avatars/thumb-6.jpg',
         },
     },
@@ -890,37 +890,37 @@ export const taskDevelopment = [
 export const taskUiUx = [
     {
         id: 'b8d49ba2-ae0e-4567-aa82-ef057f0a2d2b',
-        name: 'UI Layout Adjustment for Dashboard',
+        name: 'Annual Physical Examination',
         dueDate: '2024-09-25T00:00:00.000Z',
         checked: false,
         progress: 'In Progress',
         priority: 'High',
         assignee: {
-            name: 'Jeremiah Minsk',
+            name: 'Dr. Thompson',
             img: '/img/avatars/thumb-2.jpg',
         },
     },
     {
         id: 'fffb790d-fc52-4df6-8403-07128cc6fb31',
-        name: 'UX Improvement for Onboarding Process',
+        name: 'Vaccination Schedule Review',
         dueDate: '2024-08-15T00:00:00.000Z',
         checked: false,
         progress: 'Pending',
         priority: 'Medium',
         assignee: {
-            name: 'Arlene Pierce',
+            name: 'Nurse Pierce',
             img: '/img/avatars/thumb-6.jpg',
         },
     },
     {
         id: 'b32d5d2b-f762-426f-9bbd-ec15c879e1a5',
-        name: 'UI Element Styling for Product Page',
+        name: 'Health Screening Assessment',
         dueDate: '2024-10-05T00:00:00.000Z',
         checked: false,
         progress: 'Pending',
         priority: 'Low',
         assignee: {
-            name: 'Angelina Gotelli',
+            name: 'Dr. Gotelli',
             img: '/img/avatars/thumb-1.jpg',
         },
     },
@@ -929,37 +929,37 @@ export const taskUiUx = [
 export const taskPlaning = [
     {
         id: '8e00e8d5-b87e-4c97-8d80-695ff91f50b0',
-        name: 'Strategic Project Roadmap Planning',
+        name: 'Treatment Plan Development',
         dueDate: '2024-09-30T00:00:00.000Z',
         checked: false,
         progress: 'In Progress',
         priority: 'High',
         assignee: {
-            name: 'Jeremiah Minsk',
+            name: 'Dr. Thompson',
             img: '/img/avatars/thumb-2.jpg',
         },
     },
     {
         id: 'a1a1d440-8f4c-4be4-a92b-249107fd4e1d',
-        name: 'Quarterly Resource Allocation Plan',
+        name: 'Quarterly Care Review Schedule',
         dueDate: '2024-08-20T00:00:00.000Z',
         checked: false,
         progress: 'Pending',
         priority: 'Medium',
         assignee: {
-            name: 'Arlene Pierce',
+            name: 'Nurse Pierce',
             img: '/img/avatars/thumb-6.jpg',
         },
     },
     {
         id: 'c18b5a49-43f1-4dd3-bf5a-3f4e5e4b3db2',
-        name: 'Strategic Business Planning Session',
+        name: 'Long-term Care Strategy Planning',
         dueDate: '2024-10-10T00:00:00.000Z',
         checked: false,
         progress: 'Pending',
         priority: 'Low',
         assignee: {
-            name: 'Angelina Gotelli',
+            name: 'Dr. Gotelli',
             img: '/img/avatars/thumb-1.jpg',
         },
     },

@@ -40,7 +40,7 @@ const conceptsRoute: Routes = [
         authority: [ADMIN, USER],
         meta: {
             header: {
-                title: 'Edit customer',
+                title: 'Edit Patient',
                 description:
                     'Manage customer details, purchase history, and preferences.',
                 contained: true,
@@ -57,7 +57,7 @@ const conceptsRoute: Routes = [
         authority: [ADMIN, USER],
         meta: {
             header: {
-                title: 'Create customer',
+                title: 'Create Patient',
                 description:
                     'Manage customer details, track purchases, and update preferences easily.',
                 contained: true,

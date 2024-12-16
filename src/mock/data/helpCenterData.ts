@@ -1001,7 +1001,7 @@ export const articleListData = [
         category: 'setupGuide',
         authors: [
             {
-                name: 'John Doe',
+                name: 'PT-7683',
                 img: '/img/avatars/thumb-1.jpg',
             },
         ],

@@ -1,23 +1,21 @@
-import React from 'react';
-import Button from '@/components/ui/Button';
-import Card from '@/components/ui/Card';
-import classNames from '@/utils/classNames';
-import { Link } from 'react-router-dom';
-import { TbHeartRateMonitor, TbDroplet, TbDna } from 'react-icons/tb';
-import type { ReactNode } from 'react';
+import Button from '@/components/ui/Button'
+import Card from '@/components/ui/Card'
+import classNames from '@/utils/classNames'
+import { Link } from 'react-router-dom'
+import { TbProgressBolt, TbCopyCheck, TbArrowDownToArc } from 'react-icons/tb'
+import { Project } from '../types'
+import type { ReactNode } from 'react'
 
 type StatisticCardProps = {
-    title: string;
-    icon: ReactNode;
-    className: string;
-    value: number;
-};
+    title: string
+    icon: ReactNode
+    className: string
+    value: number
+}
 
-type BiomarkerData = {
-    ongoingBiomarker: number;
-    completedBiomarker: number;
-    upcomingBiomarker: number;
-};
+type ProjectOverview = {
+    data: Project
+}
 
 const StatisticCard = ({
     title,
@@ -46,48 +44,42 @@ const StatisticCard = ({
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
 
-const BiomarkerOverview = () => {
-    const data: BiomarkerData = {
-        ongoingBiomarker: 12,
-        completedBiomarker: 34,
-        upcomingBiomarker: 5,
-    };
-
+const ProjectOverview = ({ data }: ProjectOverview) => {
     return (
         <Card>
             <div className="flex items-center justify-between">
-                <h4>Biomarker Overview</h4>
-                <Link to="/dashboard/biomarkers">
+                <h4>Patient Dashboard Overview</h4>
+                <Link to="/concepts/projects/project-list">
                     <Button asElement="div" size="sm">
-                        All Biomarkers
+                        All Patient List
                     </Button>
                 </Link>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 rounded-2xl mt-4">
                 <StatisticCard
-                    title="Ongoing Biomarkers"
+                    title="Ongoing Patient"
                     className="bg-sky-100 dark:bg-opacity-75"
-                    value={data.ongoingBiomarker}
-                    icon={<TbHeartRateMonitor />}
+                    value={data.ongoingProject}
+                    icon={<TbProgressBolt />}
                 />
                 <StatisticCard
-                    title="Completed Biomarkers"
+                    title="Patient completed"
                     className="bg-emerald-100 dark:bg-opacity-75"
-                    value={data.completedBiomarker}
-                    icon={<TbDroplet />}
+                    value={data.projectCompleted}
+                    icon={<TbCopyCheck />}
                 />
                 <StatisticCard
-                    title="Upcoming Biomarkers"
+                    title="Upcoming Patient"
                     className="bg-purple-100 dark:bg-opacity-75"
-                    value={data.upcomingBiomarker}
-                    icon={<TbDna />}
+                    value={data.upcomingProject}
+                    icon={<TbArrowDownToArc />}
                 />
             </div>
         </Card>
-    );
-};
+    )
+}
 
-export default BiomarkerOverview;
+export default ProjectOverview

@@ -17,7 +17,7 @@ const getEvents = (date: Date, eventsSet: EventSet) => {
             {
                 id: '519bd1ca-c604-4985-a25b-b17f6bb829a7',
                 type: 'meeting',
-                label: 'Daily standup',
+                label: 'Daily ',
                 time: dayjs(date).set('hour', 10).set('minute', 0).toDate(),
             },
             {

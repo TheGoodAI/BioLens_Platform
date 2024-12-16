@@ -163,8 +163,8 @@ const CRSDashboard: React.FC = () => {
           <div className="bg-white rounded-lg border border-gray-200 p-4">
             <div className="flex justify-between items-start mb-4">
               <div>
-                <h3 className="text-sm font-semibold text-gray-900">John Doe</h3>
-                <p className="text-xs text-gray-500">PT-1234 • CAR-T Cell Therapy</p>
+                <h3 className="text-sm font-semibold text-gray-900">Patient ID-7683</h3>
+                <p className="text-xs text-gray-500">PT-7683 • CAR-T Cell Therapy</p>
               </div>
               <div className="flex space-x-2">
                 <Phone className="h-4 w-4 text-gray-600" />
