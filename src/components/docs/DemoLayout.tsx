@@ -82,7 +82,7 @@ const DemoLayout = (props: DemoLayoutProps) => {
                     <div className="hidden xl:block">
                         <Affix offset={80}>
                             <h6 className="heading-text font-bold uppercase tracking-wide mb-3 text-sm lg:text-xs">
-                                CONTENT Add Here #updated by Dev
+                                Explorer
                             </h6>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium ltr:border-l rtl:border-r border-gray-200 dark:border-gray-700 px-4">
                                 {demos.map((link) => (

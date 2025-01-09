@@ -51,7 +51,7 @@ const Schedule = ({ data = [] }: ScheduleProps) => {
     return (
         <Card>
             <div>
-                <h4>Schedule</h4>
+                <h4>Clinical Trial Schedule</h4>
             </div>
             <div className="mt-4">
                 <GanttChart

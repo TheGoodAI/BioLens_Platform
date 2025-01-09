@@ -983,7 +983,7 @@ export const mediaData = {
             favicon: '/img/thumbs/github.png',
             title: 'ThemeNate/Elstar-lite',
             description:
-                'Elstar is a React admin template with developer experience friendly & highly scalable, it comes with set of UI components meticulously crafted with Tailwind CSS, it fulfilled most of the use case to create modern and beautiful UI and application',
+                'Elstar is a React admin template with developer experience friendly & highly scalable, it comes with set of ALGOs meticulously crafted with Tailwind CSS, it fulfilled most of the use case to create modern and beautiful UI and application',
             url: 'https://github.com/ThemeNate/Elstar-lite',
         },
         {

@@ -256,7 +256,7 @@ export const userDetailData = [
         role: 'user',
         lastOnline: 1732393600,
         status: 'blocked',
-        title: 'UI/UX Designer',
+        title: 'Assessments Designer',
         personalInfo: {
             location: 'Mumbai, IN',
             address: '789 Mumbai Ave',

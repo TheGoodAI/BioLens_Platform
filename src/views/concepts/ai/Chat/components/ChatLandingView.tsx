@@ -22,22 +22,22 @@ const promptSuggestion: {
     type: PromptType
 }[] = [
     {
-        title: 'Help me sound like an expert for an upcoming trip',
+        title: 'BioSearch',
         prompt: `I'm going whale watching this weekend and want to appear knowledgeable about killer whales. Tell me a few unique and interesting facts I can share.`,
         type: 'guide',
     },
     {
-        title: 'Outline an logical sales pitch for a new product',
+        title: 'CRS-LLM',
         prompt: `Structure a sales pitch for a hair dryer that's also a microphone. Be concise and organize the sales pitch logically. `,
         type: 'writing',
     },
     {
-        title: 'Help me get organized with a list of 10 tips',
+        title: 'Q&A',
         prompt: `Give me 10 tips for room organization. `,
         type: 'idea',
     },
     {
-        title: 'Write code for a specific task, including edge cases',
+        title: 'Summary',
         prompt: `Write a Java function that takes a path as an input and creates a file storing the current system date. Consider edge cases.`,
         type: 'coding',
     },

@@ -50,7 +50,7 @@ const TopMedicalProcedures = ({ data }: TopMedicalProceduresProps) => {
                             <Th className="!px-0">
                                 <div className="flex items-center gap-2">
                                     <FaUserMd className="text-blue-500" />
-                                    Procedure Name
+                                    Procedure
                                 </div>
                             </Th>
                             <Th className="!text-right max-w-[100px]">

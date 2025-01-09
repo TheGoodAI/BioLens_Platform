@@ -14,8 +14,8 @@ const FooterContent = () => {
     return (
         <div className="flex items-center justify-between flex-auto w-full">
             <span>
-                Copyright &copy; {`${new Date().getFullYear()}`}{' '}
-                <span className="font-semibold">{`${APP_NAME}`}</span> All
+                &copy; {`${new Date().getFullYear()}`}{' '}
+                <span className="font-semibold">{`${APP_NAME}`}{'.'}</span> All
                 rights reserved.
             </span>
             <div className="">
@@ -32,7 +32,7 @@ const FooterContent = () => {
                     href="/#"
                     onClick={(e) => e.preventDefault()}
                 >
-                    Privacy & Policy
+                    Privacy Policy
                 </a>
             </div>
         </div>

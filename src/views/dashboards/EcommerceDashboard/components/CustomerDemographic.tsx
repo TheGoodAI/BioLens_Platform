@@ -31,7 +31,7 @@ const CustomerDemographic = ({ data }: CustomerDemographicProps) => {
 
     return (
         <Card>
-            <h4>Top countries Biomarker Distribution</h4>
+            <h4>Top Countries With Ongoing Biomarker Research</h4>
             <div className="flex flex-col xl:flex-row items-center gap-4 mt-4">
                 <div className="px-4 flex flex-col justify-center flex-1 w-full">
                     <RegionMap

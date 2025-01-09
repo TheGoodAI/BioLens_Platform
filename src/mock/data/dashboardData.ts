@@ -322,7 +322,7 @@ export const eCommerceData = {
             id: '18',
             name: 'Blood Glucose (HbA1c)',
             productCode: '098336NT',
-            img: '/img/products/product-7.jpg',
+            img: '/imgSepsis Management/product-7.jpg',
             sales: 1249,
             growShrink: 15.2,
         },
@@ -330,7 +330,7 @@ export const eCommerceData = {
             id: '14',
             name: 'Cholesterol Panel',
             productCode: '098383NT',
-            img: '/img/products/product-3.jpg',
+            img: '/imgSepsis Management/product-3.jpg',
             sales: 1145,
             growShrink: 13.9,
         },
@@ -338,7 +338,7 @@ export const eCommerceData = {
             id: '20',
             name: 'Vitamin D (25-OH)',
             productCode: '098392NT',
-            img: '/img/products/product-9.jpg',
+            img: '/imgSepsis Management/product-9.jpg',
             sales: 1073,
             growShrink: 9.5,
         },
@@ -346,7 +346,7 @@ export const eCommerceData = {
             id: '21',
             name: 'Iron Studies',
             productCode: '098355NT',
-            img: '/img/products/product-10.jpg',
+            img: '/imgSepsis Management/product-10.jpg',
             sales: 1022,
             growShrink: 2.3,
         },
@@ -354,7 +354,7 @@ export const eCommerceData = {
             id: '23',
             name: 'Thyroid Function',
             productCode: '098377NT',
-            img: '/img/products/product-12.jpg',
+            img: '/imgSepsis Management/product-12.jpg',
             sales: 992,
             growShrink: -0.7,
         },
@@ -362,7 +362,7 @@ export const eCommerceData = {
             id: '17',
             name: 'Liver Function',
             productCode: '098314NT',
-            img: '/img/products/product-6.jpg',
+            img: '/imgSepsis Management/product-6.jpg',
             sales: 1201,
             growShrink: -1.1,
         },
@@ -647,7 +647,7 @@ export const projectData = {
             dateTime: 1646578417,
             userName: 'Max Alexander',
             userImg: '/img/avatars/thumb-3.jpg',
-            comment: `Fine, Java MIGHT be a good example of what a programming language should be like. But Java applications are good examples of what applications SHOULDN'T be like.`,
+            comment: `The integration of real-world clinical data into the research study has significantly enhanced our understanding of patient outcomes. The collaboration between the research team and clinical staff ensures that the findings are not only scientifically robust but also clinically relevant.`,
         },
         {
             type: 'ADD-TAGS-TO-TICKET',
@@ -667,7 +667,7 @@ export const projectData = {
             dateTime: 1646565473,
             userName: 'Roberta Horton',
             userImg: '/img/avatars/thumb-7.jpg',
-            comment: `<strong>@Carolyn</strong> One of the main causes of the fall of the Roman Empire was that-lacking zero-they had no way to indicate successful termination of their C programs. `,
+            comment: `<strong>@Carolyn</strong> Through careful monitoring of patient responses in the ongoing trial, we are able to provide valuable insights into the safety and efficacy of the new treatment. Our role in collecting precise clinical data is crucial for the continued success of the research and its potential translation into clinical practice. `,
         },
         {
             type: 'ASSIGN-TICKET',
@@ -744,7 +744,7 @@ export const analyticsData = {
         },
         traffic: [
             {
-                source: 'Direct',
+                source: 'Johns Hopkins Medicine',
                 visits: 1500,
                 uniqueVisitors: 1200,
                 bounceRate: '40%',
@@ -752,7 +752,7 @@ export const analyticsData = {
                 progress: 60,
             },
             {
-                source: 'Natural',
+                source: 'Cleveland Clinic',
                 visits: 3000,
                 uniqueVisitors: 2500,
                 bounceRate: '35%',
@@ -760,7 +760,7 @@ export const analyticsData = {
                 progress: 75,
             },
             {
-                source: 'Referral',
+                source: 'CDC',
                 visits: 1000,
                 uniqueVisitors: 850,
                 bounceRate: '45%',
@@ -768,7 +768,7 @@ export const analyticsData = {
                 progress: 80,
             },
             {
-                source: 'Social Media',
+                source: 'WHO',
                 visits: 2000,
                 uniqueVisitors: 1800,
                 bounceRate: '50%',
@@ -776,7 +776,7 @@ export const analyticsData = {
                 progress: 40,
             },
             {
-                source: 'Email Campaign',
+                source: 'Stanford Medicine',
                 visits: 800,
                 uniqueVisitors: 700,
                 bounceRate: '30%',
@@ -789,28 +789,28 @@ export const analyticsData = {
             channels: [
                 {
                     id: 'google',
-                    name: 'Google',
-                    img: '/img/others/google.png',
+                    name: 'Johns Hopkins Medicine',
+                    color: '#4285F4',
                     total: 31731,
                     percentage: 40,
                 },
                 {
                     id: 'instagram',
-                    name: 'Instagram',
+                    name: 'Cleveland Clinic',
                     img: '/img/thumbs/instagram.png',
                     total: 23798,
                     percentage: 30,
                 },
                 {
                     id: 'facebook',
-                    name: 'Facebook',
+                    name: 'CDC',
                     img: '/img/thumbs/facebook.png',
                     total: 11899,
                     percentage: 15,
                 },
                 {
                     id: 'x',
-                    name: 'X',
+                    name: 'WHO',
                     img: '/img/thumbs/x.png',
                     total: 10313,
                     percentage: 13,
@@ -824,7 +824,7 @@ export const analyticsData = {
         },
         topPages: [
             {
-                pageUrl: '/dashboard',
+                pageUrl: 'Tocilizumab Administration',
                 views: {
                     amount: 6465,
                     growth: 1.7,
@@ -835,7 +835,7 @@ export const analyticsData = {
                 },
             },
             {
-                pageUrl: '/affiliate',
+                pageUrl: 'Steroid Therapy',
                 views: {
                     amount: 3687,
                     growth: 1.4,
@@ -846,7 +846,7 @@ export const analyticsData = {
                 },
             },
             {
-                pageUrl: '/contract',
+                pageUrl: 'Anti-IL-6 Receptor Therapy',
                 views: {
                     amount: 2918,
                     growth: 2.6,
@@ -857,7 +857,7 @@ export const analyticsData = {
                 },
             },
             {
-                pageUrl: '/products',
+                pageUrl: 'Sepsis Management',
                 views: {
                     amount: 4882,
                     growth: -0.7,
@@ -868,7 +868,7 @@ export const analyticsData = {
                 },
             },
             {
-                pageUrl: '/sign-in',
+                pageUrl: 'Plasma Exchange',
                 views: {
                     amount: 1527,
                     growth: 1.1,
@@ -879,7 +879,7 @@ export const analyticsData = {
                 },
             },
             {
-                pageUrl: '/about',
+                pageUrl: 'Intravenous Immunoglobulin',
                 views: {
                     amount: 2103,
                     growth: -0.9,
@@ -955,7 +955,7 @@ export const analyticsData = {
         },
         traffic: [
             {
-                source: 'Direct',
+                source: 'Johns Hopkins Medicine',
                 visits: 18000,
                 uniqueVisitors: 14500,
                 bounceRate: '38%',
@@ -963,7 +963,7 @@ export const analyticsData = {
                 progress: 65,
             },
             {
-                source: 'Natural',
+                source: 'Cleveland Clinic',
                 visits: 36000,
                 uniqueVisitors: 30000,
                 bounceRate: '34%',
@@ -971,7 +971,7 @@ export const analyticsData = {
                 progress: 78,
             },
             {
-                source: 'Referral',
+                source: 'CDC',
                 visits: 12000,
                 uniqueVisitors: 10200,
                 bounceRate: '42%',
@@ -979,7 +979,7 @@ export const analyticsData = {
                 progress: 82,
             },
             {
-                source: 'Social Media',
+                source: 'WHO',
                 visits: 24000,
                 uniqueVisitors: 21600,
                 bounceRate: '48%',
@@ -987,7 +987,7 @@ export const analyticsData = {
                 progress: 45,
             },
             {
-                source: 'Email Campaign',
+                source: 'Stanford Medicine',
                 visits: 9600,
                 uniqueVisitors: 8400,
                 bounceRate: '28%',
@@ -1000,28 +1000,28 @@ export const analyticsData = {
             channels: [
                 {
                     id: 'google',
-                    name: 'Google',
-                    img: '/img/others/google.png',
+                    name: 'Johns Hopkins Medicine',
+                    color: '#4285F4',
                     total: 372216,
                     percentage: 40,
                 },
                 {
                     id: 'instagram',
-                    name: 'Instagram',
+                    name: 'Cleveland Clinic',
                     img: '/img/thumbs/instagram.png',
                     total: 279162,
                     percentage: 30,
                 },
                 {
                     id: 'facebook',
-                    name: 'Facebook',
+                    name: 'CDC',
                     img: '/img/thumbs/facebook.png',
                     total: 139581,
                     percentage: 15,
                 },
                 {
                     id: 'x',
-                    name: 'X',
+                    name: 'WHO',
                     img: '/img/thumbs/x.png',
                     total: 120970,
                     percentage: 13,
@@ -1035,7 +1035,7 @@ export const analyticsData = {
         },
         topPages: [
             {
-                pageUrl: '/dashboard',
+                pageUrl: 'Tocilizumab Administration',
                 views: {
                     amount: 77580,
                     growth: 2.0,
@@ -1046,7 +1046,7 @@ export const analyticsData = {
                 },
             },
             {
-                pageUrl: '/affiliate',
+                pageUrl: 'Steroid Therapy',
                 views: {
                     amount: 44244,
                     growth: 1.6,
@@ -1057,7 +1057,7 @@ export const analyticsData = {
                 },
             },
             {
-                pageUrl: '/contract',
+                pageUrl: 'Anti-IL-6 Receptor Therapy',
                 views: {
                     amount: 35016,
                     growth: 3.0,
@@ -1068,7 +1068,7 @@ export const analyticsData = {
                 },
             },
             {
-                pageUrl: '/products',
+                pageUrl: 'Sepsis Management',
                 views: {
                     amount: 58584,
                     growth: -0.5,
@@ -1079,7 +1079,7 @@ export const analyticsData = {
                 },
             },
             {
-                pageUrl: '/sign-in',
+                pageUrl: 'Plasma Exchange',
                 views: {
                     amount: 18324,
                     growth: 1.3,
@@ -1090,7 +1090,7 @@ export const analyticsData = {
                 },
             },
             {
-                pageUrl: '/about',
+                pageUrl: 'Intravenous Immunoglobulin',
                 views: {
                     amount: 25236,
                     growth: -1.0,
@@ -1152,7 +1152,7 @@ export const analyticsData = {
         },
         traffic: [
             {
-                source: 'Direct',
+                source: 'Johns Hopkins Medicine',
                 visits: 750,
                 uniqueVisitors: 640,
                 bounceRate: '39%',
@@ -1160,7 +1160,7 @@ export const analyticsData = {
                 progress: 61,
             },
             {
-                source: 'Natural',
+                source: 'Cleveland Clinic',
                 visits: 1500,
                 uniqueVisitors: 1280,
                 bounceRate: '36%',
@@ -1168,7 +1168,7 @@ export const analyticsData = {
                 progress: 74,
             },
             {
-                source: 'Referral',
+                source: 'CDC',
                 visits: 500,
                 uniqueVisitors: 430,
                 bounceRate: '44%',
@@ -1176,7 +1176,7 @@ export const analyticsData = {
                 progress: 78,
             },
             {
-                source: 'Social Media',
+                source: 'WHO',
                 visits: 1000,
                 uniqueVisitors: 890,
                 bounceRate: '49%',
@@ -1184,7 +1184,7 @@ export const analyticsData = {
                 progress: 43,
             },
             {
-                source: 'Email Campaign',
+                source: 'Stanford Medicine',
                 visits: 400,
                 uniqueVisitors: 350,
                 bounceRate: '29%',
@@ -1197,28 +1197,28 @@ export const analyticsData = {
             channels: [
                 {
                     id: 'google',
-                    name: 'Google',
-                    img: '/img/others/google.png',
+                    name: 'Johns Hopkins Medicine',
+                    color: '#4285F4',
                     total: 7236,
                     percentage: 40,
                 },
                 {
                     id: 'instagram',
-                    name: 'Instagram',
+                    name: 'Cleveland Clinic',
                     img: '/img/thumbs/instagram.png',
                     total: 5427,
                     percentage: 30,
                 },
                 {
                     id: 'facebook',
-                    name: 'Facebook',
+                    name: 'CDC',
                     img: '/img/thumbs/facebook.png',
                     total: 2714,
                     percentage: 15,
                 },
                 {
                     id: 'x',
-                    name: 'X',
+                    name: 'WHO',
                     img: '/img/thumbs/x.png',
                     total: 2353,
                     percentage: 13,
@@ -1232,7 +1232,7 @@ export const analyticsData = {
         },
         topPages: [
             {
-                pageUrl: '/dashboard',
+                pageUrl: 'Tocilizumab Administration',
                 views: {
                     amount: 1452,
                     growth: 2.2,
@@ -1243,7 +1243,7 @@ export const analyticsData = {
                 },
             },
             {
-                pageUrl: '/affiliate',
+                pageUrl: 'Steroid Therapy',
                 views: {
                     amount: 879,
                     growth: 1.5,
@@ -1254,7 +1254,7 @@ export const analyticsData = {
                 },
             },
             {
-                pageUrl: '/contract',
+                pageUrl: 'Anti-IL-6 Receptor Therapy',
                 views: {
                     amount: 698,
                     growth: 2.8,
@@ -1265,7 +1265,7 @@ export const analyticsData = {
                 },
             },
             {
-                pageUrl: '/products',
+                pageUrl: 'Sepsis Management',
                 views: {
                     amount: 1165,
                     growth: -0.4,
@@ -1276,7 +1276,7 @@ export const analyticsData = {
                 },
             },
             {
-                pageUrl: '/sign-in',
+                pageUrl: 'Plasma Exchange',
                 views: {
                     amount: 364,
                     growth: 1.2,
@@ -1287,7 +1287,7 @@ export const analyticsData = {
                 },
             },
             {
-                pageUrl: '/about',
+                pageUrl: 'Intravenous Immunoglobulin',
                 views: {
                     amount: 501,
                     growth: -0.8,

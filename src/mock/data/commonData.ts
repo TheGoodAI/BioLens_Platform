@@ -217,7 +217,7 @@ export const searchQueryPoolData = [
         title: 'Button',
         icon: 'uiCommonButton',
         category: 'Common',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.common.grid',
@@ -225,7 +225,7 @@ export const searchQueryPoolData = [
         title: 'Grid',
         icon: 'uiCommonGrid',
         category: 'Common',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.common.typography',
@@ -233,7 +233,7 @@ export const searchQueryPoolData = [
         title: 'Typography',
         icon: 'uiCommonTypography',
         category: 'Common',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.common.icons',
@@ -241,7 +241,7 @@ export const searchQueryPoolData = [
         title: 'Icons',
         icon: 'uiCommonIcons',
         category: 'Common',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.feedback.alert',
@@ -249,7 +249,7 @@ export const searchQueryPoolData = [
         title: 'Alert',
         icon: 'uiFeedbackAlert',
         category: 'Feedback',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.feedback.dialog',
@@ -257,7 +257,7 @@ export const searchQueryPoolData = [
         title: 'Dialog',
         icon: 'uiFeedbackDialog',
         category: 'Feedback',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.feedback.drawer',
@@ -265,7 +265,7 @@ export const searchQueryPoolData = [
         title: 'Drawer',
         icon: 'uiFeedbackDrawer',
         category: 'Feedback',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.feedback.progress',
@@ -273,7 +273,7 @@ export const searchQueryPoolData = [
         title: 'Progress',
         icon: 'uiFeedbackProgress',
         category: 'Feedback',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.feedback.skeleton',
@@ -281,7 +281,7 @@ export const searchQueryPoolData = [
         title: 'Skeleton',
         icon: 'uiFeedbackSkeleton',
         category: 'Feedback',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.feedback.spinner',
@@ -289,7 +289,7 @@ export const searchQueryPoolData = [
         title: 'Spinner',
         icon: 'uiFeedbackSpinner',
         category: 'Feedback',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.feedback.toast',
@@ -297,7 +297,7 @@ export const searchQueryPoolData = [
         title: 'Toast',
         icon: 'uiFeedbackToast',
         category: 'Feedback',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.dataDisplay.avatar',
@@ -305,7 +305,7 @@ export const searchQueryPoolData = [
         title: 'Avatar',
         icon: 'uiDataDisplayAvatar',
         category: 'Data Display',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.dataDisplay.badge',
@@ -313,7 +313,7 @@ export const searchQueryPoolData = [
         title: 'Badge',
         icon: 'uiDataDisplayBadge',
         category: 'Data Display',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.dataDisplay.calendar',
@@ -321,7 +321,7 @@ export const searchQueryPoolData = [
         title: 'Calendar',
         icon: 'uiDataDisplayCalendar',
         category: 'Data Display',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.dataDisplay.cards',
@@ -329,7 +329,7 @@ export const searchQueryPoolData = [
         title: 'Cards',
         icon: 'uiDataDisplayCard',
         category: 'Data Display',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.dataDisplay.table',
@@ -337,7 +337,7 @@ export const searchQueryPoolData = [
         title: 'Table',
         icon: 'uiDataDisplayTable',
         category: 'Data Display',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.dataDisplay.tag',
@@ -345,7 +345,7 @@ export const searchQueryPoolData = [
         title: 'Tag',
         icon: 'uiDataDisplayTag',
         category: 'Data Display',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.dataDisplay.timeline',
@@ -353,7 +353,7 @@ export const searchQueryPoolData = [
         title: 'Timeline',
         icon: 'uiDataDisplayTimeline',
         category: 'Data Display',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.dataDisplay.tooltip',
@@ -361,7 +361,7 @@ export const searchQueryPoolData = [
         title: 'Tooltip',
         icon: 'uiDataDisplayTooltip',
         category: 'Data Display',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.forms.checkbox',
@@ -369,7 +369,7 @@ export const searchQueryPoolData = [
         title: 'Checkbox',
         icon: 'uiFormsCheckbox',
         category: 'Forms',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.forms.datePicker',
@@ -377,7 +377,7 @@ export const searchQueryPoolData = [
         title: 'Date picker',
         icon: 'uiFormsDatepicker',
         category: 'Forms',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.forms.formControl',
@@ -385,7 +385,7 @@ export const searchQueryPoolData = [
         title: 'Form control',
         icon: 'uiFormsFormControl',
         category: 'Forms',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.forms.input',
@@ -393,7 +393,7 @@ export const searchQueryPoolData = [
         title: 'Input',
         icon: 'uiFormsInput',
         category: 'Forms',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.forms.inputGroup',
@@ -401,7 +401,7 @@ export const searchQueryPoolData = [
         title: 'Input Group',
         icon: 'uiFormsInputGroup',
         category: 'Forms',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.forms.radio',
@@ -409,7 +409,7 @@ export const searchQueryPoolData = [
         title: 'Radio',
         icon: 'uiFormsRadio',
         category: 'Forms',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.forms.segment',
@@ -417,7 +417,7 @@ export const searchQueryPoolData = [
         title: 'Segment',
         icon: 'uiFormsSegment',
         category: 'Forms',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.forms.select',
@@ -425,7 +425,7 @@ export const searchQueryPoolData = [
         title: 'Select',
         icon: 'uiFormsSelect',
         category: 'Forms',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.forms.switcher',
@@ -433,7 +433,7 @@ export const searchQueryPoolData = [
         title: 'Switcher',
         icon: 'uiFormsSwitcher',
         category: 'Forms',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.forms.timeInput',
@@ -441,7 +441,7 @@ export const searchQueryPoolData = [
         title: 'Time Input',
         icon: 'uiFormsTimePicker',
         category: 'Forms',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.forms.upload',
@@ -449,7 +449,7 @@ export const searchQueryPoolData = [
         title: 'Upload',
         icon: 'uiFormsUpload',
         category: 'Forms',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.navigation.dropdown',
@@ -457,7 +457,7 @@ export const searchQueryPoolData = [
         title: 'Dropdown',
         icon: 'uiNavigationDropdown',
         category: 'Navigation',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.navigation.menu',
@@ -465,7 +465,7 @@ export const searchQueryPoolData = [
         title: 'Menu',
         icon: 'uiNavigationMenu',
         category: 'Navigation',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.navigation.pagination',
@@ -473,7 +473,7 @@ export const searchQueryPoolData = [
         title: 'Pagination',
         icon: 'uiNavigationPagination',
         category: 'Navigation',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.navigation.steps',
@@ -481,7 +481,7 @@ export const searchQueryPoolData = [
         title: 'Steps',
         icon: 'uiNavigationSteps',
         category: 'Navigation',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.navigation.tabs',
@@ -489,7 +489,7 @@ export const searchQueryPoolData = [
         title: 'Tabs',
         icon: 'uiNavigationTabs',
         category: 'Navigation',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.graph.charts',
@@ -497,7 +497,7 @@ export const searchQueryPoolData = [
         title: 'Charts',
         icon: 'uiGraphChart',
         category: 'Graph',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'uiComponent.graph.maps',
@@ -505,7 +505,7 @@ export const searchQueryPoolData = [
         title: 'Maps',
         icon: 'uiGraphMaps',
         category: 'Graph',
-        categoryTitle: 'UI Components',
+        categoryTitle: 'ALGOs',
     },
     {
         key: 'concepts.ai.chat',

@@ -56,7 +56,7 @@ const recommendedSearch: SearchResult[] = [
                 title: 'Dev 3',
                 icon: 'uiCommonButton',
                 category: 'Common',
-                categoryTitle: 'UI Components',
+                categoryTitle: 'ALGOs',
             },
         ],
     },

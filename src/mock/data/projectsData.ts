@@ -966,8 +966,8 @@ export const taskPlaning = [
 ]
 
 export const tasksData = {
-    'Bug fix': taskBugFix,
+    'Needs Attention': taskBugFix,
     Development: taskDevelopment,
-    'UI/UX': taskUiUx,
+    'Assessments': taskUiUx,
     Planing: taskPlaning,
 }

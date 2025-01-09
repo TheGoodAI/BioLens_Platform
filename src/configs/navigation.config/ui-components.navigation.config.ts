@@ -11,8 +11,8 @@ const uiComponentNavigationConfig: NavigationTree[] = [
     {
         key: 'uiComponent',
         path: '',
-        title: 'Ui Component',
-        translateKey: 'nav.uiComponents',
+        title: 'ALGO',
+        translateKey: 'ALGO',
         icon: 'uiComponents',
         type: NAV_ITEM_TYPE_TITLE,
         authority: [ADMIN, USER],

@@ -51,28 +51,28 @@ const ProjectOverview = ({ data }: ProjectOverview) => {
     return (
         <Card>
             <div className="flex items-center justify-between">
-                <h4>Patient Dashboard Overview</h4>
+                <h4>Clinical Overview</h4>
                 <Link to="/concepts/projects/project-list">
                     <Button asElement="div" size="sm">
-                        All Patient List
+                        All Patient
                     </Button>
                 </Link>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 rounded-2xl mt-4">
                 <StatisticCard
-                    title="Ongoing Patient"
+                    title="Ongoing Trials"
                     className="bg-sky-100 dark:bg-opacity-75"
                     value={data.ongoingProject}
                     icon={<TbProgressBolt />}
                 />
                 <StatisticCard
-                    title="Patient completed"
+                    title="Patient Interventions"
                     className="bg-emerald-100 dark:bg-opacity-75"
                     value={data.projectCompleted}
                     icon={<TbCopyCheck />}
                 />
                 <StatisticCard
-                    title="Upcoming Patient"
+                    title="Patient Tasks"
                     className="bg-purple-100 dark:bg-opacity-75"
                     value={data.upcomingProject}
                     icon={<TbArrowDownToArc />}

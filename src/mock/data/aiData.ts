@@ -1,9 +1,9 @@
 export const chatHistoryData = [
     {
         id: '1',
-        title: 'Camera outfit',
+        title: 'CRS Biomarkers',
         lastConversation:
-            'I have a photoshoot tomorrow. Can you recommend me some colors and outfit options that will look good on camera?',
+            'Can you explain what biomarkers are used to diagnose CRS (Chronic Rhinosinusitis)?',
         conversation: [
             {
                 id: 'b0474144-2815-44c0-bbaf-165edffce238',
@@ -13,7 +13,7 @@ export const chatHistoryData = [
                     avatarImageUrl: '/img/avatars/thumb-1.jpg',
                 },
                 content:
-                    'I have a photoshoot tomorrow. Can you recommend me some colors and outfit options that will look good on camera?',
+                    'Can you explain what biomarkers are used to diagnose CRS (Chronic Rhinosinusitis)?',
                 timestamp: 1723430400,
                 type: 'regular',
                 isMyMessage: true,
@@ -26,7 +26,7 @@ export const chatHistoryData = [
                     avatarImageUrl: '/img/thumbs/ai.jpg',
                 },
                 content:
-                    'Sure! Here are some color and outfit suggestions that typically look great in photoshoots:\n\n1. Jewel tones such as emerald green, royal blue, and ruby red always photograph well and can make you stand out in a photo.\n\n2. Neutral tones like black, white, gray, and nude can create a classic and timeless look in photos.\n\n3. Patterns like stripes, polka dots, or florals can add visual interest to your outfit without overpowering the image.\n\n4. Avoid wearing busy patterns or logos as they can be distracting in photos.\n\n5. Consider wearing form-fitting clothing that flatters your body shape, but also allows you to move comfortably during the shoot.\n\n6. Layering different textures and fabrics can add depth and dimension to your outfit in photos.\n\nRemember to choose colors and outfits that make you feel confident and comfortable, as that will ultimately translate well on camera. Good luck with your photoshoot!',
+                    'Certainly! Biomarkers used in diagnosing Chronic Rhinosinusitis (CRS) can provide insight into the inflammation patterns. Here are a few examples:\n\n1. **Eosinophilic Markers**: Elevated **Eosinophils** in blood or sinus tissue are common in CRS with nasal polyps (CRSwNP).\n\n2. **IgE Levels**: Total or specific **IgE** levels indicate allergic inflammation often associated with CRS.\n\n3. **IL-5 (Interleukin-5)**: This cytokine is linked to eosinophilic inflammation and may be elevated in severe CRS cases.\n\n4. **Neutrophilic Biomarkers**: In non-eosinophilic CRS, markers like **IL-8** or **neutrophil elastase** are elevated.\n\n5. **C-Reactive Protein (CRP)**: A general inflammatory marker that may rise during acute CRS exacerbations.\n\nBiomarkers help differentiate types of CRS and guide personalized treatments, including biologics or anti-inflammatory therapies.',
                 timestamp: 1723430400,
                 type: 'regular',
                 isMyMessage: false,
@@ -38,9 +38,9 @@ export const chatHistoryData = [
     },
     {
         id: '2',
-        title: 'Vacation planning',
+        title: 'Parkinson’s Symptoms',
         lastConversation:
-            "I'm planning a trip to Europe next summer. Can you help me with a travel itinerary?",
+            "What are the early symptoms of Parkinson's disease I should watch out for?",
         conversation: [
             {
                 id: 'ad00e323-eefb-4803-b2ca-ba0bdb0116e1',
@@ -49,7 +49,7 @@ export const chatHistoryData = [
                     name: 'Angelina Gotelli',
                     avatarImageUrl: '/img/avatars/thumb-1.jpg',
                 },
-                content: `I'm planning a trip to Europe next summer. Can you help me with a travel itinerary?`,
+                content: `What are the early symptoms of Parkinson's disease I should watch out for?`,
                 timestamp: 1723430400,
                 type: 'regular',
                 isMyMessage: true,
@@ -62,31 +62,7 @@ export const chatHistoryData = [
                     avatarImageUrl: '/img/thumbs/ai.jpg',
                 },
                 content:
-                    'Of course! Europe is a vast and diverse continent with so much to offer. To create a personalized itinerary for you, I would need some more information. \n\n- How long will your trip be?\n- Which countries or cities are you most interested in visiting?\n- What are your interests and preferences (e.g. history, food, outdoor activities)?\n- What is your budget for the trip?\n\nOnce I have this information, I can suggest a detailed itinerary for you that includes transportation, accommodation, activities, and must-see sights. Let me know your preferences so I can help you plan a memorable trip to Europe!',
-                timestamp: 1723430400,
-                type: 'regular',
-                isMyMessage: false,
-            },
-            {
-                id: 'c9f90ed9-7e2b-4519-b707-617ad140e87a',
-                sender: {
-                    id: '1',
-                    name: 'Angelina Gotelli',
-                    avatarImageUrl: '/img/avatars/thumb-1.jpg',
-                },
-                content: `Its about 2 weeks`,
-                timestamp: 1723430400,
-                type: 'regular',
-                isMyMessage: true,
-            },
-            {
-                id: 'e7f7b6c2-a8b9-45a4-90e1-55207fc3db3d',
-                sender: {
-                    id: 'ai',
-                    name: 'Chat AI',
-                    avatarImageUrl: '/img/thumbs/ai.jpg',
-                },
-                content: `Here is a sample 2-week itinerary for a trip to Europe:\n\nDay 1-3: London, England\n- Visit iconic landmarks such as Big Ben, Buckingham Palace, and the Tower of London\n- Explore the British Museum and take a ride on the London Eye\n- Enjoy a traditional English afternoon tea\n\nDay 4-6: Paris, France\n- Visit the Eiffel Tower, Louvre Museum, and Notre Dame Cathedral\n- Stroll along the Seine River and explore Montmartre\n- Enjoy a croissant at a local Parisian café\n\nDay 7-9: Rome, Italy\n- Visit the Colosseum, Roman Forum, and Vatican City\n- Explore the historic neighborhoods of Trastevere and Testaccio\n- Indulge in authentic Italian pasta and gelato\n\nDay 10-12: Barcelona, Spain\n- Visit Gaudi's famous landmarks including Sagrada Familia and Park Guell\n- Explore the Gothic Quarter and relax on the sandy beaches\n- Taste tapas and sip sangria at a local bodega\n\nDay 13-14: Amsterdam, Netherlands\n- Explore the historic canals and visit the Anne Frank House\n- Visit the Van Gogh Museum and take a bike ride around the city\n- Enjoy a canal cruise and try some traditional Dutch stroopwafels\n\nThis itinerary covers some of the most popular cities in Europe and gives you a taste of each country's culture. Feel free to customize it to better suit your interests and travel style. Have a fantastic trip!`,
+                    'Early symptoms of **Parkinson’s disease** can be subtle and develop gradually. Here are some key signs to watch for:\n\n1. **Tremors**: Slight shaking in the hands, fingers, or chin, especially at rest.\n\n2. **Bradykinesia (Slowness of movement)**: Reduced ability to initiate or complete movements like walking or getting up from a chair.\n\n3. **Muscle Rigidity**: Stiffness in the arms, legs, or trunk that may limit motion.\n\n4. **Changes in Handwriting**: Smaller, more cramped writing (micrographia).\n\n5. **Loss of Smell**: Early loss of the sense of smell (anosmia) is common.\n\n6. **Sleep Disturbances**: Acting out dreams (REM behavior disorder) or other irregular sleep patterns.\n\n7. **Posture Changes**: Stooped or hunched-over posture may appear early on.\n\n8. **Soft or Low Voice**: Speaking softly, with reduced volume or monotone speech.\n\nIf you or someone you know notices these symptoms, it’s best to consult a neurologist for an early diagnosis and proper management.',
                 timestamp: 1723430400,
                 type: 'regular',
                 isMyMessage: false,
@@ -98,9 +74,9 @@ export const chatHistoryData = [
     },
     {
         id: '3',
-        title: 'Healthy recipes',
+        title: 'Healthy Recipes',
         lastConversation:
-            'Can you suggest some healthy dinner recipes that are quick to prepare?',
+            'Can you suggest some healthy recipes with anti-inflammatory benefits?',
         conversation: [
             {
                 id: 'ba482dfa-dff4-4f6b-ab16-a84b8eee47c4',
@@ -109,7 +85,7 @@ export const chatHistoryData = [
                     name: 'Angelina Gotelli',
                     avatarImageUrl: '/img/avatars/thumb-1.jpg',
                 },
-                content: `Can you suggest some healthy dinner recipes that are quick to prepare?`,
+                content: `Can you suggest some healthy recipes with anti-inflammatory benefits?`,
                 timestamp: 1723430400,
                 type: 'regular',
                 isMyMessage: true,
@@ -122,7 +98,7 @@ export const chatHistoryData = [
                     avatarImageUrl: '/img/thumbs/ai.jpg',
                 },
                 content:
-                    '1. Grilled salmon with lemon and herbs: Marinate salmon fillets in olive oil, lemon juice, garlic, and herbs, then grill until cooked through. Serve with a side of roasted vegetables or a mixed green salad.\n\n2. Turkey and vegetable stir-fry: Sauté ground turkey with colorful vegetables like bell peppers, broccoli, and snow peas in a stir-fry sauce. Serve over brown rice or quinoa for a balanced meal.\n\n3. Chickpea and spinach curry: Cook chickpeas in a flavorful tomato and coconut milk curry sauce with baby spinach. Serve with naan bread or brown rice for a satisfying vegetarian meal.\n\n4. Zucchini noodles with pesto and cherry tomatoes: Make zucchini noodles using a spiralizer, then toss with homemade or store-bought pesto sauce and halved cherry tomatoes. Top with grilled chicken or shrimp for added protein.\n\n5. Caprese grilled chicken: Top grilled chicken breasts with fresh mozzarella, sliced tomatoes, and basil leaves. Drizzle with balsamic glaze and serve with a side of quinoa or a mixed greens salad.\n\nThese recipes are not only quick to prepare but also nutritious and delicious. Enjoy your healthy dinner!',
+                    'Here are some healthy, anti-inflammatory recipes you can try:\n\n1. **Turmeric Lentil Soup**: A hearty soup made with lentils, carrots, ginger, garlic, and turmeric, a powerful anti-inflammatory spice.\n\n2. **Salmon with Lemon and Dill**: Baked salmon rich in omega-3 fatty acids paired with a lemon-dill sauce and served with steamed vegetables.\n\n3. **Spinach and Blueberry Salad**: Fresh spinach, blueberries, walnuts, and avocado tossed in an olive oil and balsamic vinegar dressing.\n\n4. **Quinoa and Sweet Potato Bowl**: Roasted sweet potatoes, quinoa, kale, and chickpeas, topped with tahini dressing.\n\n5. **Green Smoothie**: Blend spinach, kale, green apple, chia seeds, and ginger for a nutrient-packed drink with anti-inflammatory benefits.\n\nThese meals are rich in antioxidants, healthy fats, and whole foods that can help reduce inflammation and support overall health.',
                 timestamp: 1723430400,
                 type: 'regular',
                 isMyMessage: false,
@@ -134,9 +110,9 @@ export const chatHistoryData = [
     },
     {
         id: '4',
-        title: 'Exercise routine',
+        title: 'Exercise & Parkinson’s',
         lastConversation:
-            "I'm looking to start a new exercise routine. What are some effective workouts for beginners?",
+            "Can exercise help with Parkinson's symptoms, and if so, what kind of exercises are most effective?",
         conversation: [
             {
                 id: '03a38bfa-1e64-4e40-a1a0-4a5c24be6851',
@@ -145,7 +121,7 @@ export const chatHistoryData = [
                     name: 'Angelina Gotelli',
                     avatarImageUrl: '/img/avatars/thumb-1.jpg',
                 },
-                content: `I'm looking to start a new exercise routine. What are some effective workouts for beginners?`,
+                content: `Can exercise help with Parkinson's symptoms, and if so, what kind of exercises are most effective?`,
                 timestamp: 1723430400,
                 type: 'regular',
                 isMyMessage: true,
@@ -157,7 +133,7 @@ export const chatHistoryData = [
                     name: 'Chat AI',
                     avatarImageUrl: '/img/thumbs/ai.jpg',
                 },
-                content: `Here are some effective workouts for beginners to consider:\n\n1. Walking or jogging: Start with a brisk walk and gradually build up to jogging or running.\n\n2. Bodyweight exercises: Include exercises such as squats, lunges, push-ups, and planks to build strength and improve overall fitness.\n\n3. Yoga: Try out a beginner's yoga class to improve flexibility, balance, and core strength.\n\n4. Swimming: Swimming is a great low-impact workout that can help improve cardiovascular fitness and muscle tone.\n\n5. Cycling: Whether you're cycling outdoors or using a stationary bike, cycling is a great way to get your heart rate up and build endurance.\n\n6. Group fitness classes: Consider taking a beginner-friendly fitness class such as Zumba, Pilates, or circuit training to mix up your routine and stay motivated.\n\nRemember to start slowly, listen to your body, and consult with a fitness professional if you have any concerns or medical conditions. Good luck with your new exercise routine!`,
+                content: `Yes, exercise can be very beneficial in managing **Parkinson's symptoms**. Here are some effective exercises:\n\n1. **Aerobic Exercise**: Walking, swimming, or cycling improves cardiovascular health and overall mobility.\n\n2. **Strength Training**: Light weightlifting or resistance band exercises help maintain muscle mass and strength.\n\n3. **Balance Exercises**: Tai Chi and yoga improve balance and coordination, reducing the risk of falls.\n\n4. **Stretching**: Regular stretching can help reduce stiffness and maintain flexibility.\n\n5. **Speech and Facial Exercises**: Simple voice exercises or facial movements can strengthen vocal cords and facial muscles affected by Parkinson’s.\n\nExercise should be done regularly, ideally under the supervision of a physical therapist or a Parkinson’s specialist, to ensure safety and effectiveness. Staying active can significantly slow the progression of motor symptoms.`,
                 timestamp: 1723430400,
                 type: 'regular',
                 isMyMessage: false,
@@ -169,9 +145,9 @@ export const chatHistoryData = [
     },
     {
         id: '5',
-        title: 'Max number Python function',
+        title: 'Biomarker Analysis in Parkinson’s',
         lastConversation:
-            'Write a Python function that finding the maximum number in a list',
+            'How are biomarkers used to track the progression of Parkinson’s disease?',
         conversation: [
             {
                 id: '0dd185c4-63e4-4db6-8162-859efe3018dc',
@@ -180,7 +156,7 @@ export const chatHistoryData = [
                     name: 'Angelina Gotelli',
                     avatarImageUrl: '/img/avatars/thumb-1.jpg',
                 },
-                content: `Write a Python function that finding the maximum number in a list`,
+                content: `How are biomarkers used to track the progression of Parkinson’s disease?`,
                 timestamp: 1723430400,
                 type: 'regular',
                 isMyMessage: true,
@@ -193,7 +169,7 @@ export const chatHistoryData = [
                     avatarImageUrl: '/img/thumbs/ai.jpg',
                 },
                 content:
-                    'Sure, here is an example code in Python for finding the maximum number in a list:\n\n```python\ndef find_max_number(nums):\n    if not nums:\n        return None\n      \n    max_num = nums[0]\n    for num in nums:\n        if num > max_num:\n            max_num = num\n\n    return max_num\n\n# Test cases\nprint(find_max_number([1, 5, 10, 3, 8]))  # Output should be 10\nprint(find_max_number([-1, -5, -3, -8]))  # Output should be -1\nprint(find_max_number([]))  # Output should be None\n```\n\nThis code defines a function `find_max_number` that takes a list of numbers as input and returns the maximum number in the list. It handles the edge case of an empty list by returning `None`.',
+                    'Biomarkers play a critical role in tracking the progression of **Parkinson’s disease**. Here are a few commonly studied biomarkers:\n\n1. **Alpha-Synuclein**: Elevated or misfolded alpha-synuclein proteins in cerebrospinal fluid (CSF) or blood are key markers of disease progression.\n\n2. **Dopamine Levels**: PET or DAT scans measure dopamine transporter activity, which declines as Parkinson’s progresses.\n\n3. **Inflammatory Markers**: Increased levels of **IL-6**, TNF-α, or C-reactive protein (CRP) indicate neuroinflammation.\n\n4. **Neurofilament Light Chain (NfL)**: Elevated NfL levels in CSF or blood are associated with neuronal damage.\n\n5. **Genetic Markers**: Mutations in genes like **LRRK2** or **GBA** are linked to disease severity and progression.\n\nThese biomarkers help researchers and clinicians assess disease stage, monitor progression, and evaluate the effectiveness of new therapies in clinical trials.',
                 timestamp: 1723430400,
                 type: 'regular',
                 isMyMessage: false,
@@ -202,7 +178,8 @@ export const chatHistoryData = [
         createdTime: 1723786000,
         updatedTime: 1723786000,
         enable: true,
-    },
+    }
+
 ]
 
 export const imageData = [

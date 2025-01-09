@@ -2,19 +2,19 @@
     "nav": {
         "dashboard": {
             "dashboard": "Dashboard",
-            "ecommerce": "Biomarker Dashboard",
-            "analytic": "Patient Vital Insights",
-            "project": "Patient Dashboard",
-            "marketing": "CRS Analytic"
+            "ecommerce": "Biomarker Overview",
+            "analytic": "Patient Profiles",
+            "project": "Clinical Overview",
+            "marketing": "BioPredict"
         },
-        "concepts": "Concepts",
+        "concepts": "Insights",
         "conceptsAi": {
-            "ai": "AI",
-            "chat": "Search",
+            "ai": "BioSearch",
+            "chat": "BioLLM",
             "image": "Image"
         },
         "conceptsCustomers": {
-            "customers": "Patients Record",
+            "customers": "Patients Data",
             "customerList": "List",
             "customerEdit": "Edit",
             "customerCreate": "Create",
@@ -27,96 +27,19 @@
             "productCreate": "Create"
         },
         "conceptsProjects": {
-            "projects": "Patient Data",
+            "projects": "Patient Dashboard",
             "projectList": "Patient List",
             "projectDetails": "Patient Details",
-            "projectTasks": "Patient Tasks",
-            "projectIssue": "Patient Issue"
+            "projectTasks": "Patient Procedures",
+            "projectIssue": "Patient Results"
         },
-        "conceptsOrders": {
-            "orders": "Orders",
-            "orderList": "List",
-            "orderEdit": "Edit",
-            "orderDetails": "Details",
-            "orderCreate": "Create"
-        },
-        "conceptsAccount": {
-            "account": "Account",
-            "settings": "Settings",
-            "activityLog": "Activity log",
-            "rolesPermissions": "Roles & Permissions"
-        },
-        "conceptsHelpCenter": {
-            "helpCenter": "Help Center",
-            "supportHub": "Support Hub",
-            "article": "Article",
-            "editArticle": "Edit Article",
-            "faq": "FAQ"
-        },
-        "calendar": "Calendar",
-        "fileManager": "File Manager",
-        "mail": "Mail",
-        "chat": "Chat",
-        "uiComponents": "Data Analytics",
-        "uiComponentsCommon": {
-            "common": "Common",
-            "grid": "Grid",
-            "button": "Button",
-            "typography": "Typography",
-            "icons": "Icons"
-        },
-        "uiComponentsFeeback": {
-            "feedback": "Feedback",
-            "alert": "Alert",
-            "dialog": "Dialog",
-            "drawer": "Drawer",
-            "progress": "Progress",
-            "skeleton": "Skeleton",
-            "spinner": "Spinner",
-            "toast": "Toast"
-        },
-        "uiComponentsDataDisplay": {
-            "dataDisplay": "Data Display",
-            "avatar": "Avatar",
-            "badge": "Badge",
-            "calendar": "Calendar",
-            "cards": "Cards",
-            "table": "Table",
-            "tag": "Tag",
-            "timeline": "Timeline",
-            "tooltip": "Tooltip"
-        },
-        "uiComponentsForms": {
-            "forms": "Forms",
-            "checkbox": "Checkbox",
-            "datePicker": "Date Picker",
-            "formControl": "Form Control",
-            "input": "Input",
-            "inputGroup": "Input Group",
-            "radio": "Radio",
-            "segment": "Segment",
-            "select": "Select",
-            "switcher": "Switcher",
-            "timeInput": "Time Input",
-            "upload": "Upload"
-        },
-        "uiComponentsNavigation": {
-            "navigation": "Navigation",
-            "dropdown": "Dropdown",
-            "menu": "Menu",
-            "pagination": "Pagination",
-            "steps": "Steps",
-            "tabs": "Tabs"
-        },
+        
         "uiComponentsGraph": {
-            "graph": "Graph",
-            "charts": "Charts",
+            "uiComponents" : "ALGO",
+            "graph": "Real-Time CRS Algo",
+            "charts": "Data Visualization",
             "maps": "Maps"
-        },
-        "pages": {
-            "pages": "Pages",
-            "welcome": "Welcome",
-            "accessDenied": "Access Denied"
         }
+        
     }
 }

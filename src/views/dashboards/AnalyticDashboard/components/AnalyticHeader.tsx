@@ -20,8 +20,7 @@ const AnalyticHeader = ({
     return (
         <div className="flex flex-col md:flex-row md:items-center justify-between mb-2 gap-4">
             <div>
-                <h4 className="mb-1">Patient Vitals Assessment</h4>
-                <p>Comprehensive Monitoring Dashboard</p>
+                <h4 className="mb-1">Patient Vitals Monitor </h4>
             </div>
             <div className="flex items-center gap-2">
                 <span>Show by:</span>

@@ -69,7 +69,7 @@ export const logData = [
                 dateTime: 1646578417,
                 userName: 'Max Alexander',
                 userImg: '/img/avatars/thumb-3.jpg',
-                comment: `Fine, Java MIGHT be a good example of what a programming language should be like. But Java applications are good examples of what applications SHOULDN'T be like.`,
+                comment: `The integration of real-world clinical data into the research study has significantly enhanced our understanding of patient outcomes. The collaboration between the research team and clinical staff ensures that the findings are not only scientifically robust but also clinically relevant.`,
             },
             {
                 type: 'ADD-TAGS-TO-TICKET',
@@ -89,7 +89,7 @@ export const logData = [
                 dateTime: 1646565473,
                 userName: 'Roberta Horton',
                 userImg: '/img/avatars/thumb-7.jpg',
-                comment: `<strong>@Carolyn</strong> One of the main causes of the fall of the Roman Empire was that-lacking zero-they had no way to indicate successful termination of their C programs. `,
+                comment: `<strong>@Carolyn</strong> Through careful monitoring of patient responses in the ongoing trial, we are able to provide valuable insights into the safety and efficacy of the new treatment. Our role in collecting precise clinical data is crucial for the continued success of the research and its potential translation into clinical practice. `,
             },
             {
                 type: 'ASSIGN-TICKET',

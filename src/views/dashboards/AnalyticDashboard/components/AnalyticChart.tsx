@@ -27,7 +27,11 @@ interface VitalAssessmentProps {
 
 interface RiskQuestion {
   question: string;
-  options: string[];
+  options: { 
+    text: string; 
+    color: string;
+    selected: boolean;
+  }[];
 }
 
 interface RiskAssessmentProps {
@@ -102,9 +106,12 @@ const VitalsMonitoringDashboard: React.FC = () => {
             {q.options.map((option, idx) => (
               <button
                 key={idx}
-                className="p-2 text-sm border rounded-lg hover:bg-blue-50 hover:border-blue-300 transition-colors"
+                className={`p-2 text-sm border rounded-lg transition-colors
+                  ${option.selected 
+                    ? `${option.color.replace('text', 'bg')} border-${option.color.split('-')[1]}-500 text-white` 
+                    : `${option.color} border-gray-200 hover:bg-blue-50 hover:border-blue-300`}`}
               >
-                {option}
+                {option.text}
               </button>
             ))}
           </div>
@@ -116,22 +123,38 @@ const VitalsMonitoringDashboard: React.FC = () => {
   const riskQuestions: RiskQuestion[] = [
     {
       question: "Current Activity Level",
-      options: ["Normal", "Reduced", "Severely Limited"]
+      options: [
+        { text: "Normal", color: "text-green-500", selected: false },
+        { text: "Reduced", color: "text-yellow-500", selected: true },
+        { text: "Severely Limited", color: "text-red-500", selected: false }
+      ]
     },
     {
       question: "Breathing Difficulty",
-      options: ["None", "Mild", "Severe"]
+      options: [
+        { text: "None", color: "text-green-500", selected: false },
+        { text: "Mild", color: "text-yellow-500", selected: false },
+        { text: "Severe", color: "text-red-500", selected: true }
+      ]
     }
   ];
 
   const symptomQuestions: RiskQuestion[] = [
     {
       question: "Pain Level",
-      options: ["No Pain", "Moderate", "Severe"]
+      options: [
+        { text: "No Pain", color: "text-green-500", selected: false },
+        { text: "Moderate", color: "text-yellow-500", selected: false },
+        { text: "Severe", color: "text-red-500", selected: true }
+      ]
     },
     {
       question: "Consciousness Level",
-      options: ["Alert", "Drowsy", "Unresponsive"]
+      options: [
+        { text: "Alert", color: "text-green-500", selected: false },
+        { text: "Drowsy", color: "text-yellow-500", selected: true },
+        { text: "Unresponsive", color: "text-red-500", selected: false }
+      ]
     }
   ];
 
