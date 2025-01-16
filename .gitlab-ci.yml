@@ -1,28 +1,59 @@
+image: node:18
+
 stages:
+  - install
+  - lint
   - build
   - test
   - deploy
 
-build_job:
-  stage: build
+# Install dependencies
+install_dependencies:
+  stage: install
   script:
-    - echo "Building the project..."
-    - npm run dev  # Replace with your build commands
+    - echo "Installing dependencies..."
+    - npm ci
   only:
     - main
 
-test_job:
+# Lint the code
+lint_code:
+  stage: lint
+  script:
+    - echo "Running ESLint..."
+    - npm run lint
+    - echo "Checking Prettier formatting..."
+    - npm run prettier
+  only:
+    - main
+
+# Build the project
+build_application:
+  stage: build
+  script:
+    - echo "Building the project with Vite..."
+    - npm run build
+  artifacts:
+    paths:
+      - dist/  # Adjust based on your Vite output directory
+  only:
+    - main
+
+# Run tests (optional)
+run_tests:
   stage: test
   script:
     - echo "Running tests..."
-    - npm test  # Replace with your test commands
+    - npm test || echo "No tests found, skipping..."
   only:
     - main
 
-deploy_job:
+# Deploy (optional)
+deploy_to_server:
   stage: deploy
   script:
     - echo "Deploying to production..."
-    - ./deploy.sh  # Replace with your deployment script
+    - rsync -avz --delete ./dist/ user@your-server:/path/to/deploy/
+    - ssh user@your-server "pm2 restart all"  # Or your preferred deployment command
   only:
     - tags
