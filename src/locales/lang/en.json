@@ -5,7 +5,8 @@
             "ecommerce": "Biomarker Overview",
             "analytic": "Patient Profiles",
             "project": "Clinical Overview",
-            "marketing": "BioPredict"
+            "marketing": "BioPredict",
+            "newProject": "Treatment Overview"
         },
         "concepts": "Insights",
         "conceptsAi": {

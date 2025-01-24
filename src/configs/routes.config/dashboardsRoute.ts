@@ -41,6 +41,15 @@ const dashboardsRoute: Routes = [
             pageBackgroundType: 'plain',
         },
     },
+    {
+        key: 'dashboard.newProject',
+        path: `${DASHBOARDS_PREFIX_PATH}/new-project`,
+        component: lazy(() => import('@/views/dashboards/NewProjectDashboard')),
+        authority: [ADMIN, USER],
+        meta: {
+            pageContainerType: 'contained',
+        },
+    },
 ]
 
 export default dashboardsRoute

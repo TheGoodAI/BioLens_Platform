@@ -227,6 +227,176 @@ const conceptsNavigationConfig: NavigationTree[] = [
                     // },
                 ],
             },
+            {
+                key: 'concepts.helpCenter',
+                path: '',
+                title: 'Help Center',
+                translateKey: 'nav.conceptsHelpCenter.helpCenter',
+                icon: 'helpCenter',
+                type: NAV_ITEM_TYPE_COLLAPSE,
+                authority: [ADMIN, USER],
+                meta: {
+                    description: {
+                        translateKey: 'nav.conceptsHelpCenter.helpCenterDesc',
+                        label: 'Support and articles',
+                    },
+                },
+                subMenu: [
+                    {
+                        key: 'concepts.helpCenter.supportHub',
+                        path: `${CONCEPTS_PREFIX_PATH}/help-center/support-hub`,
+                        title: 'Support Hub',
+                        translateKey: 'nav.conceptsHelpCenter.supportHub',
+                        icon: 'helpCeterSupportHub',
+                        type: NAV_ITEM_TYPE_ITEM,
+                        authority: [ADMIN, USER],
+                        meta: {
+                            description: {
+                                translateKey:
+                                    'nav.conceptsHelpCenter.supportHubDesc',
+                                label: 'Central support hub',
+                            },
+                        },
+                        subMenu: [],
+                    },
+                    {
+                        key: 'concepts.helpCenter.article',
+                        path: `${CONCEPTS_PREFIX_PATH}/help-center/article/pWBKE_0UiQ`,
+                        title: 'Article',
+                        translateKey: 'nav.conceptsHelpCenter.article',
+                        icon: 'helpCeterArticle',
+                        type: NAV_ITEM_TYPE_ITEM,
+                        authority: [ADMIN, USER],
+                        meta: {
+                            description: {
+                                translateKey:
+                                    'nav.conceptsHelpCenter.articleDesc',
+                                label: 'Read support articles',
+                            },
+                        },
+                        subMenu: [],
+                    },
+                    {
+                        key: 'concepts.helpCenter.editArticle',
+                        path: `${CONCEPTS_PREFIX_PATH}/help-center/edit-article/pWBKE_0UiQ`,
+                        title: 'Edit Article',
+                        translateKey: 'nav.conceptsHelpCenter.editArticle',
+                        icon: 'helpCeterEditArticle',
+                        type: NAV_ITEM_TYPE_ITEM,
+                        authority: [ADMIN, USER],
+                        meta: {
+                            description: {
+                                translateKey:
+                                    'nav.conceptsHelpCenter.editArticleDesc',
+                                label: 'Modify article content',
+                            },
+                        },
+                        subMenu: [],
+                    },
+                    {
+                        key: 'concepts.helpCenter.manageArticle',
+                        path: `${CONCEPTS_PREFIX_PATH}/help-center/manage-article`,
+                        title: 'Manage Article',
+                        translateKey: 'nav.conceptsHelpCenter.manageArticle',
+                        icon: 'helpCeterManageArticle',
+                        type: NAV_ITEM_TYPE_ITEM,
+                        authority: [ADMIN, USER],
+                        meta: {
+                            description: {
+                                translateKey:
+                                    'nav.conceptsHelpCenter.manageArticleDesc',
+                                label: 'Article management',
+                            },
+                        },
+                        subMenu: [],
+                    },
+                ],
+            },
+            {
+                key: 'concepts.account',
+                path: '',
+                title: 'Account',
+                translateKey: 'nav.conceptsAccount.account',
+                icon: 'account',
+                type: NAV_ITEM_TYPE_COLLAPSE,
+                authority: [ADMIN, USER],
+                meta: {
+                    description: {
+                        translateKey: 'nav.conceptsAccount.accountDesc',
+                        label: 'Account settings and info',
+                    },
+                },
+                subMenu: [
+                    {
+                        key: 'concepts.account.settings',
+                        path: `${CONCEPTS_PREFIX_PATH}/account/settings`,
+                        title: 'Settings',
+                        translateKey: 'nav.conceptsAccount.settings',
+                        icon: 'accountSettings',
+                        type: NAV_ITEM_TYPE_ITEM,
+                        authority: [ADMIN, USER],
+                        meta: {
+                            description: {
+                                translateKey:
+                                    'nav.conceptsAccount.settingsDesc',
+                                label: 'Configure your settings',
+                            },
+                        },
+                        subMenu: [],
+                    },
+                    {
+                        key: 'concepts.account.activityLog',
+                        path: `${CONCEPTS_PREFIX_PATH}/account/activity-log`,
+                        title: 'Activity log',
+                        translateKey: 'nav.conceptsAccount.activityLog',
+                        icon: 'accountActivityLogs',
+                        type: NAV_ITEM_TYPE_ITEM,
+                        authority: [ADMIN, USER],
+                        meta: {
+                            description: {
+                                translateKey:
+                                    'nav.conceptsAccount.activityLogDesc',
+                                label: 'View recent activities',
+                            },
+                        },
+                        subMenu: [],
+                    },
+                    {
+                        key: 'concepts.account.rolesPermissions',
+                        path: `${CONCEPTS_PREFIX_PATH}/account/roles-permissions`,
+                        title: 'Roles & Permissions',
+                        translateKey: 'nav.conceptsAccount.rolesPermissions',
+                        icon: 'accountRoleAndPermission',
+                        type: NAV_ITEM_TYPE_ITEM,
+                        authority: [ADMIN, USER],
+                        meta: {
+                            description: {
+                                translateKey:
+                                    'nav.conceptsAccount.rolesPermissionsDesc',
+                                label: 'Manage roles & permissions',
+                            },
+                        },
+                        subMenu: [],
+                    },
+                    {
+                        key: 'concepts.account.pricing',
+                        path: `${CONCEPTS_PREFIX_PATH}/account/pricing`,
+                        title: 'Pricing',
+                        translateKey: 'nav.conceptsAccount.pricing',
+                        icon: 'accountPricing',
+                        type: NAV_ITEM_TYPE_ITEM,
+                        authority: [ADMIN, USER],
+                        meta: {
+                            description: {
+                                translateKey: 'nav.conceptsAccount.pricingDesc',
+                                label: 'View pricing plans',
+                            },
+                        },
+                        subMenu: [],
+                    },
+                ],
+            },
+            
             
         ],
     },

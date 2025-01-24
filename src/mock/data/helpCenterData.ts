@@ -79,9 +79,9 @@ export const categoriesData = [
                 articleCounts: 7,
             },
             {
-                id: 'themes',
+                id: 'BioPredict',
                 name: 'Themes',
-                description: ' Articles related to themes and customization.',
+                description: ' Articles related to BioPredict and customization.',
                 articleCounts: 9,
             },
             {
@@ -97,10 +97,10 @@ export const categoriesData = [
 export const articleListData = [
     {
         id: 'pWBKE_0UiQ',
-        title: 'Things you need to know about configuring the theme',
+        title: 'Things you need to know about configuring healthcare AI systems',
         content:
             'Measuring programming progress by lines of code is like measuring aircraft building progress by weight. You cant have great software without a great team, and most software teams behave like dysfunctional families.',
-        category: 'themes',
+        category: 'BioPredict',
         authors: [
             {
                 name: 'Ron Vargas',
@@ -122,10 +122,10 @@ export const articleListData = [
     },
     {
         id: '2tv0CboXfj',
-        title: 'Understand the background of themes',
+        title: 'Understand the background of BioPredict',
         content:
             'A hacker on a roll may be able to produce-in a period of a few months-something that a small development group (say, 7-8 people) would have a hard time getting together over a year. IBM used to report that certain programmers might be as much as 100 times as productive as other workers, or more.',
-        category: 'themes',
+        category: 'BioPredict',
         authors: [
             {
                 name: 'Carolyn Hanson',
@@ -155,7 +155,7 @@ export const articleListData = [
         title: 'Basic tools you need to know on configuring the theme',
         content:
             'Its ridiculous to live 100 years and only be able to remember 30 million bytes. You know, less than a compact disc.  The human condition is really becoming more obsolete every minute.',
-        category: 'themes',
+        category: 'BioPredict',
         authors: [
             {
                 name: 'Lloyd Obrien',
@@ -177,10 +177,10 @@ export const articleListData = [
     },
     {
         id: '09R6gIH5zD',
-        title: 'Simple guidance for you in theming',
+        title: 'Simple guidance for you in Healthcare Analytics',
         content:
             'As soon as we started programming, we found to our surprise that it wasnt as easy to get programs right as we had thought. Debugging had to be discovered.  I can remember the exact instant when I realized that a large part of my life from then on was going to be spent in finding mistakes in my own programs.',
-        category: 'themes',
+        category: 'BioPredict',
         authors: [
             {
                 name: 'Joyce Freeman',
@@ -1198,22 +1198,34 @@ export const articleListData = [
 
 export const articleDetailData = {
     content: `
-    <p>Technology is evolving at an unprecedented pace, transforming every aspect of our lives. From artificial intelligence to quantum computing, the advancements in technology are opening up new possibilities and reshaping industries across the globe.</p>
-    <div id="artificialIntelligence">
-        <h5>Artificial Intelligence</h5><p>Artificial Intelligence (AI) is one of the most significant technological advancements of our time. AI is being integrated into various sectors such as healthcare, finance, and transportation, offering innovative solutions to complex problems. In the future, AI is expected to further revolutionize industries by improving efficiency, accuracy, and decision-making processes.</p><p>In healthcare, AI is being used to develop personalized treatment plans, improve diagnostic accuracy, and enhance patient care. For instance, AI algorithms can analyze vast amounts of medical data to identify patterns and predict disease outbreaks. In finance, AI is transforming trading strategies, risk management, and customer service through advanced data analytics and automated systems.</p> </div>
-    <div id="quantumComputing">
-        <h5 >Quantum Computing</h5><p>Quantum computing is another groundbreaking technology that holds the potential to solve problems that are currently unsolvable by classical computers. With the ability to perform complex calculations at unprecedented speeds, quantum computers could transform fields such as cryptography, materials science, and pharmaceuticals.</p><p>Researchers are already exploring the use of quantum computing to design new materials with specific properties, optimize supply chains, and develop new drug therapies. The sheer computational power of quantum computers could also revolutionize machine learning, leading to more advanced AI systems and deeper insights from data.</p>
-    </div>
-    <div id="internetOfThings">
-    <h5 >Internet of Things (IoT)</h5>
-    <p>The Internet of Things (IoT) is connecting devices and systems like never before, creating a more interconnected world. From smart homes to industrial automation, IoT is enhancing the way we live and work by providing real-time data and insights. As IoT technology continues to evolve, it is expected to bring even more innovative applications and efficiencies.</p><p>Smart cities are emerging as a result of IoT, where interconnected systems manage everything from traffic flow to energy usage, improving the quality of urban life. In agriculture, IoT devices monitor soil conditions, weather patterns, and crop health, leading to more efficient farming practices and higher yields.</p>
-    </div>
-    <div id="5gTechnology">
-        <h5>5G Technology</h5><p>5G technology is set to revolutionize the way we communicate and access information. With faster speeds and lower latency, 5G will enable new applications such as autonomous vehicles, smart cities, and advanced healthcare solutions. The widespread adoption of 5G is expected to drive economic growth and create new opportunities across various industries.</p><p>In addition to enhancing mobile communications, 5G will support the growth of IoT by providing the necessary infrastructure for millions of connected devices. This will lead to the development of innovative applications in various sectors, including remote surgery, real-time language translation, and immersive virtual reality experiences.</p>
-    </div>
-    <div id="blockchainTechnology">
-    <h5>Blockchain Technology</h5><p>Blockchain technology, originally developed as the backbone of cryptocurrencies like Bitcoin, is now being recognized for its potential to revolutionize various industries beyond finance. By providing a decentralized and secure way to record transactions, blockchain technology can enhance transparency, security, and efficiency.</p><p>In supply chain management, blockchain can track products from origin to delivery, ensuring authenticity and reducing fraud. In healthcare, it can secure patient records, enabling better data sharing while maintaining privacy. Furthermore, smart contracts, which are self-executing contracts with the terms directly written into code, can automate and streamline complex legal and financial agreements.</p><p>Blockchain’s potential extends to voting systems, where it can ensure transparency and prevent tampering, thereby increasing trust in the electoral process. As the technology matures, its applications are expected to expand, driving innovation and efficiency in numerous fields.</p><p>As we look to the future, it is clear that technology will continue to play a crucial role in shaping our world. The advancements in AI, quantum computing, IoT, 5G, and blockchain are just the beginning. Embracing these technologies and leveraging their potential will be key to driving innovation and progress in the years to come.</p>
-    </div>`,
+    <p>Healthcare technology is advancing rapidly, transforming the way we deliver care and improving outcomes. From artificial intelligence to blockchain, these innovations are revolutionizing the healthcare industry and reshaping patient care.</p>
+<div id="artificialIntelligence">
+    <h5>Artificial Intelligence in Healthcare</h5>
+    <p>Artificial Intelligence (AI) is at the forefront of healthcare transformation. AI is being integrated into various areas, including diagnostics, treatment planning, and patient monitoring, offering innovative solutions to complex medical challenges. By analyzing vast datasets, AI can identify patterns and insights that improve decision-making and patient outcomes.</p>
+    <p>In healthcare, AI is streamlining diagnostic processes, enhancing the accuracy of imaging analysis, and enabling personalized medicine. For instance, AI-powered algorithms can predict disease progression, recommend treatment options, and assist in early detection of critical conditions like cancer. In administrative tasks, AI helps reduce the burden on healthcare providers by automating workflows and optimizing resource allocation.</p>
+</div>
+<div id="quantumComputing">
+    <h5>Quantum Computing in Healthcare</h5>
+    <p>Quantum computing holds the promise of solving complex healthcare problems that traditional computing cannot address. Its unparalleled computational power can transform areas such as drug discovery, genomics, and precision medicine.</p>
+    <p>Researchers are exploring quantum computing to design new drugs by simulating molecular interactions, advancing genomic analysis for personalized therapies, and optimizing hospital logistics. The potential of quantum computing extends to accelerating machine learning in healthcare, enabling faster and more accurate predictions from patient data.</p>
+</div>
+<div id="internetOfThings">
+    <h5>Internet of Medical Things (IoMT)</h5>
+    <p>The Internet of Medical Things (IoMT) is creating a more connected and efficient healthcare ecosystem. From wearable devices to smart hospital systems, IoMT enhances patient care by providing real-time data and insights.</p>
+    <p>In remote patient monitoring, IoMT devices track vital signs and alert caregivers to potential issues, improving chronic disease management. Smart hospitals use interconnected systems to manage energy, monitor patient movements, and streamline operations, enhancing overall efficiency and care quality. In-home healthcare devices enable personalized treatment and reduce hospital visits, making care more accessible and cost-effective.</p>
+</div>
+<div id="5gTechnology">
+    <h5>5G Technology in Healthcare</h5>
+    <p>5G technology is revolutionizing healthcare delivery by enabling faster, more reliable connectivity. Its low latency and high-speed capabilities support real-time data sharing, telemedicine, and remote surgeries.</p>
+    <p>5G infrastructure enhances the integration of IoMT devices, enabling seamless communication between sensors, wearables, and hospital systems. This facilitates applications like virtual reality for therapy, real-time language translation for diverse patient populations, and remote monitoring of patients in critical conditions. The adoption of 5G is expected to drive innovation in healthcare, improving accessibility and patient experiences.</p>
+</div>
+<div id="blockchainTechnology">
+    <h5>Blockchain in Healthcare</h5>
+    <p>Blockchain technology is transforming healthcare by providing secure, decentralized systems for managing sensitive patient data. Its applications range from maintaining electronic health records (EHRs) to tracking the supply chain of pharmaceuticals.</p>
+    <p>In healthcare data management, blockchain ensures data integrity, enhances interoperability, and improves security, enabling seamless sharing of patient records while protecting privacy. Blockchain also supports the implementation of smart contracts, automating billing processes and ensuring transparency in insurance claims.</p>
+    <p>Furthermore, blockchain enhances trust in clinical trials by providing an immutable record of trial data, reducing fraud, and ensuring transparency. As the technology evolves, blockchain is expected to address challenges in healthcare, driving innovation and building a more resilient system.</p>
+    <p>As we look to the future, healthcare technology will continue to shape the industry. Advancements in AI, quantum computing, IoMT, 5G, and blockchain are paving the way for more efficient, accessible, and personalized care. Leveraging these technologies will be key to transforming healthcare and improving lives worldwide.</p>
+</div>`,
     tableOfContent: [
         {
             id: 'artificialIntelligence',

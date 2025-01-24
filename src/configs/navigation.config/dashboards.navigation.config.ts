@@ -61,6 +61,16 @@ const dashboardsNavigationConfig: NavigationTree[] = [
                 authority: [ADMIN, USER],
                 subMenu: [],
             },
+            {
+                key: 'dashboard.newProject',
+                path: `${DASHBOARDS_PREFIX_PATH}/new-project`,
+                title: 'New Project',
+                translateKey: 'nav.dashboard.newProject',
+                icon: 'dashboardProject',
+                type: NAV_ITEM_TYPE_ITEM,
+                authority: [ADMIN, USER],
+                subMenu: [],
+            }
         ],
     },
 ]
