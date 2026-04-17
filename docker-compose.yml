@@ -1,0 +1,10 @@
+services:
+  biolens:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    image: biolens-platform:latest
+    ports:
+      - "80:80"
+    restart: unless-stopped
