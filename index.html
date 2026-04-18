@@ -10,8 +10,10 @@
   <body>
     <div id="root"></div>
     <!-- Runtime config: populated at container startup from Azure Key Vault.
-         Must be loaded before the app bundle so Firebase initializes correctly. -->
-    <script src="/env-config.js"></script>
+         Must be loaded before the app bundle so Firebase initializes correctly.
+         type="module" is intentionally omitted — this file is generated at runtime
+         and must execute synchronously before the app bundle. -->
+    <script src="/env-config.js" defer></script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
