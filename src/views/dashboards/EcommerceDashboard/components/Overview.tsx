@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card } from '@/components/ui/card';
+import { Card } from '@/components/ui/Card';
 import { HeartPulse, Dna, Activity } from 'lucide-react';
 import {
   LineChart,
