@@ -1,0 +1,99 @@
+trigger:
+  branches:
+    include:
+      - main
+
+pool:
+  name: ProtoAI-vmss
+
+variables:
+  ACR_LOGIN_SERVER: protoai.azurecr.io
+  IMAGE_NAME: biolens-platform
+  IMAGE_TAG: latest
+  IMAGE: protoai.azurecr.io/biolens-platform:latest
+
+  CONTAINER_NAME: biolens-platform
+  APP_PORT: 80
+
+  KEY_VAULT_NAME: biolens-kv
+
+stages:
+# ============================================================
+# STAGE 1: BUILD & PUSH IMAGE (ACR SERVICE CONNECTION)
+# ============================================================
+- stage: BuildAndPush
+  displayName: Build and Push Docker Image
+  jobs:
+    - job: BuildPush
+      displayName: Build & Push to ACR
+      steps:
+        - checkout: self
+
+        - task: Docker@2
+          displayName: Build and Push Image to ACR
+          inputs:
+            containerRegistry: ProtoAI
+            repository: $(IMAGE_NAME)
+            command: buildAndPush
+            Dockerfile: Dockerfile
+            tags: |
+              $(IMAGE_TAG)
+
+# ============================================================
+# STAGE 2: DEPLOY TO VM (MANAGED IDENTITY)
+# ============================================================
+- stage: Deploy
+  displayName: Deploy to VM
+  dependsOn: BuildAndPush
+  condition: succeeded()
+
+  jobs:
+    - job: DeployToVM
+      displayName: SSH and Deploy Container
+      steps:
+        - task: SSH@0
+          displayName: Deploy using Managed Identity
+          inputs:
+            sshEndpoint: biolens-vm SSH
+            runOptions: inline
+            inline: |
+              set -euo pipefail
+
+              echo "========================================"
+              echo "Starting deployment using Managed Identity"
+              echo "========================================"
+
+              ACR_LOGIN_SERVER="protoai.azurecr.io"
+              IMAGE="protoai.azurecr.io/biolens-platform:latest"
+              CONTAINER_NAME="biolens-platform"
+              APP_PORT="80"
+              KV_NAME="biolens-kv"
+
+              echo "Logging into Azure using Managed Identity..."
+              az login --identity >/dev/null
+
+              ACR_NAME="${ACR_LOGIN_SERVER%%.*}"
+              echo "Logging into ACR: $ACR_NAME"
+              az acr login --name "$ACR_NAME" >/dev/null
+
+              echo "Pulling image..."
+              docker pull "$IMAGE"
+
+              echo "Stopping existing container (if any)..."
+              docker stop "$CONTAINER_NAME" >/dev/null 2>&1 || true
+              docker rm "$CONTAINER_NAME" >/dev/null 2>&1 || true
+
+              echo "Starting container..."
+              docker run -d \
+                --name "$CONTAINER_NAME" \
+                --restart unless-stopped \
+                -p ${APP_PORT}:${APP_PORT} \
+                -e USE_KEY_VAULT=true \
+                -e KEY_VAULT_NAME=$KV_NAME \
+                -e ENVIRONMENT=development \
+                "$IMAGE"
+
+              echo "========================================"
+              echo "Deployment successful"
+              docker ps --filter "name=$CONTAINER_NAME"
+              echo "========================================"
