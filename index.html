@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Good AI - Dashboard">
     <title>Good AI - Dashboard</title>
+    <!-- Runtime config generated at container startup from Azure Key Vault.
+         Loaded synchronously in <head> so window.__RUNTIME_CONFIG__ is available
+         before the app bundle executes. Not a module — intentional. -->
+    <script src="/env-config.js"></script>
   </head>
   <body>
     <div id="root"></div>
-    <!-- Runtime config: populated at container startup from Azure Key Vault.
-         Must be loaded before the app bundle so Firebase initializes correctly.
-         type="module" is intentionally omitted — this file is generated at runtime
-         and must execute synchronously before the app bundle. -->
-    <script src="/env-config.js" defer></script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

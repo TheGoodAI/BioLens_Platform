@@ -46,6 +46,9 @@ ENV VITE_FIREBASE_APP_ID=$VITE_FIREBASE_APP_ID
 ENV VITE_DEV_MODE=$VITE_DEV_MODE
 ENV VITE_API_DEBUG=$VITE_API_DEBUG
 
+# Increase Node.js heap to prevent OOM during Rollup bundling of large codebases
+ENV NODE_OPTIONS=--max-old-space-size=4096
+
 RUN npm run build
 
 # ── Stage 6: Production (Nginx + Azure Key Vault startup) ─────────────────────
