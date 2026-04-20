@@ -25,5 +25,14 @@ export default defineConfig({
     outDir: 'build',
     sourcemap: false,
     reportCompressedSize: false,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor-react': ['react', 'react-dom', 'react-router-dom'],
+          'vendor-firebase': ['firebase/app', 'firebase/auth'],
+          'vendor-charts': ['recharts'],
+        },
+      },
+    },
   }
 })
