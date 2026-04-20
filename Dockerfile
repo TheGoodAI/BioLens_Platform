@@ -17,7 +17,6 @@ ARG VITE_FIREBASE_APP_ID
 ARG VITE_DEV_MODE=false
 ARG VITE_API_DEBUG=false
 
-ENV NODE_OPTIONS="--max-old-space-size=1536"
 RUN npm run build
 
 # ── Production ────────────────────────────────────────────────────────────────
