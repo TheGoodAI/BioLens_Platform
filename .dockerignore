@@ -8,3 +8,9 @@ env/
 .gitignore
 *.md
 *.log
+.vscode
+.idea
+.DS_Store
+*.tgz
+coverage
+.eslintcache

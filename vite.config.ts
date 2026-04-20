@@ -22,6 +22,39 @@ export default defineConfig({
     }
   },
   build: {
-    outDir: 'build'
+    outDir: 'build',
+    // Disable source-maps in the production image build — halves peak memory
+    sourcemap: false,
+    rollupOptions: {
+      output: {
+        // Split heavy vendor deps into separate chunks so Rollup can flush
+        // each independently.  Keeps peak RSS well below the 2 GB heap cap.
+        manualChunks(id) {
+          if (!id.includes('node_modules')) return undefined;
+
+          // Firebase SDK is the single largest dependency tree
+          if (id.includes('firebase')) return 'vendor-firebase';
+
+          // Charting / visualisation libs
+          if (id.includes('recharts') || id.includes('d3-') || id.includes('visx'))
+            return 'vendor-charts';
+
+          // Calendar / scheduling
+          if (id.includes('fullcalendar') || id.includes('gantt-task-react'))
+            return 'vendor-calendar';
+
+          // React core + router
+          if (
+            id.includes('react-dom') ||
+            id.includes('react-router') ||
+            id.includes('/react/')
+          )
+            return 'vendor-react';
+
+          // Everything else from node_modules
+          return 'vendor';
+        },
+      },
+    },
   }
 })

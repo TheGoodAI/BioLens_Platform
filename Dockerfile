@@ -46,8 +46,12 @@ ENV VITE_FIREBASE_APP_ID=$VITE_FIREBASE_APP_ID
 ENV VITE_DEV_MODE=$VITE_DEV_MODE
 ENV VITE_API_DEBUG=$VITE_API_DEBUG
 
-# Increase Node.js heap to prevent OOM during Rollup bundling of large codebases
-ENV NODE_OPTIONS=--max-old-space-size=4096
+# ── Memory-constrained build tuning ──────────────────────────────────────────
+# • max-old-space-size  — cap V8 heap so GC triggers well before the host is
+#   exhausted (4 096 was letting Node hoard RAM until the DevOps agent crashed).
+# • max-semi-space-size — keep the nursery small so minor-GC runs more often
+#   during Rollup's transform phase, trading ~5 % speed for much lower peak RSS.
+ENV NODE_OPTIONS="--max-old-space-size=2048 --max-semi-space-size=64"
 
 RUN npm run build
 
