@@ -1,31 +1,12 @@
 # syntax=docker/dockerfile:1
 # check=skip=SecretsUsedInArgOrEnv
 
-# ── Build ─────────────────────────────────────────────────────────────────────
-FROM node:20-alpine AS build
-WORKDIR /app
-COPY package.json package-lock.json ./
-RUN npm ci
-COPY . .
-
-ARG VITE_FIREBASE_API_KEY
-ARG VITE_FIREBASE_AUTH_DOMAIN
-ARG VITE_FIREBASE_PROJECT_ID
-ARG VITE_FIREBASE_STORAGE_BUCKET
-ARG VITE_FIREBASE_MESSAGING_SENDER_ID
-ARG VITE_FIREBASE_APP_ID
-ARG VITE_DEV_MODE=false
-ARG VITE_API_DEBUG=false
-
-RUN npm run build
-
-# ── Production ────────────────────────────────────────────────────────────────
-FROM nginx:1.27-alpine AS production
+FROM nginx:1.27-alpine
 WORKDIR /usr/share/nginx/html
 
 RUN apk add --no-cache bash curl jq && rm -rf ./*
 
-COPY --from=build /app/build .
+COPY build/ .
 
 RUN printf 'server {\n\
     listen 80;\n\
