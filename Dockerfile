@@ -1,28 +1,27 @@
-# ── Stage 1: Base ────────────────────────────────────────────────────────────
-FROM node:20-alpine AS base
-WORKDIR /app
-COPY package.json package-lock.json ./
-
-# ── Stage 2: Development dependencies ─────────────────────────────────────────
-FROM base AS development-deps
-RUN npm ci
-
-# ── Stage 3: Production dependencies ──────────────────────────────────────────
-FROM base AS production-deps
-RUN npm ci --omit=dev
-
-# ── Stage 4: Development stage ────────────────────────────────────────────────
+# ── Stage 1: Development ──────────────────────────────────────────────────────
+# Kept for local `docker compose up` — not used in the CI pipeline.
 FROM node:20-alpine AS development
 WORKDIR /app
-COPY --from=development-deps /app/node_modules ./node_modules
+COPY package.json package-lock.json ./
+RUN npm ci
 COPY . .
 EXPOSE 5173
 CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
 
-# ── Stage 5: Build ────────────────────────────────────────────────────────────
+# ── Stage 2: Build ────────────────────────────────────────────────────────────
+# Key memory optimisations for constrained self-hosted agents:
+#   1. Single RUN for install+build — BuildKit discards the layer's COW diff
+#      as soon as the RUN finishes, instead of keeping two fat layers resident.
+#   2. --optimize-for-size tells V8 to favour smaller heap over throughput.
+#   3. --gc-interval=100 forces a GC check every 100 allocations (default 4096),
+#      catching garbage from Rollup's transform phase much earlier.
+#   4. --max-semi-space-size=16 keeps the nursery tiny (default ~16 MB on 20.x
+#      but explicit here for clarity).
+#   5. The manual-chunk config in vite.config.ts splits the bundle so Rollup
+#      can serialise and release each chunk independently.
 FROM node:20-alpine AS build
 WORKDIR /app
-COPY --from=development-deps /app/node_modules ./node_modules
+COPY package.json package-lock.json ./
 COPY . .
 
 # Build-time ARGs — baked into the bundle as fallback defaults.
@@ -37,23 +36,22 @@ ARG VITE_FIREBASE_APP_ID
 ARG VITE_DEV_MODE=false
 ARG VITE_API_DEBUG=false
 
-ENV VITE_FIREBASE_API_KEY=$VITE_FIREBASE_API_KEY
-ENV VITE_FIREBASE_AUTH_DOMAIN=$VITE_FIREBASE_AUTH_DOMAIN
-ENV VITE_FIREBASE_PROJECT_ID=$VITE_FIREBASE_PROJECT_ID
-ENV VITE_FIREBASE_STORAGE_BUCKET=$VITE_FIREBASE_STORAGE_BUCKET
-ENV VITE_FIREBASE_MESSAGING_SENDER_ID=$VITE_FIREBASE_MESSAGING_SENDER_ID
-ENV VITE_FIREBASE_APP_ID=$VITE_FIREBASE_APP_ID
-ENV VITE_DEV_MODE=$VITE_DEV_MODE
-ENV VITE_API_DEBUG=$VITE_API_DEBUG
+ENV VITE_FIREBASE_API_KEY=$VITE_FIREBASE_API_KEY \
+    VITE_FIREBASE_AUTH_DOMAIN=$VITE_FIREBASE_AUTH_DOMAIN \
+    VITE_FIREBASE_PROJECT_ID=$VITE_FIREBASE_PROJECT_ID \
+    VITE_FIREBASE_STORAGE_BUCKET=$VITE_FIREBASE_STORAGE_BUCKET \
+    VITE_FIREBASE_MESSAGING_SENDER_ID=$VITE_FIREBASE_MESSAGING_SENDER_ID \
+    VITE_FIREBASE_APP_ID=$VITE_FIREBASE_APP_ID \
+    VITE_DEV_MODE=$VITE_DEV_MODE \
+    VITE_API_DEBUG=$VITE_API_DEBUG
 
-# ── Memory-constrained build tuning ──────────────────────────────────────────
-# Previous values (4 096, then 2 048) still OOM-killed on the self-hosted agent.
-# 1 024 MB heap + tiny nursery keeps peak RSS around 1.2–1.4 GB.
-ENV NODE_OPTIONS="--max-old-space-size=1024 --max-semi-space-size=32"
+# Single RUN: install + build + clean — keeps only build/ artefacts in the layer
+ENV NODE_OPTIONS="--max-old-space-size=2560 --max-semi-space-size=16 --optimize-for-size --gc-interval=100"
+RUN npm ci && \
+    npm run build && \
+    rm -rf node_modules
 
-RUN npm run build
-
-# ── Stage 6: Production (Nginx + Azure Key Vault startup) ─────────────────────
+# ── Stage 3: Production (Nginx + Azure Key Vault startup) ─────────────────────
 FROM nginx:1.27-alpine AS production
 WORKDIR /usr/share/nginx/html
 
@@ -65,7 +63,7 @@ RUN apk add --no-cache bash curl jq
 # Remove default nginx assets
 RUN rm -rf ./*
 
-# Copy built assets (vite outputs to build/)
+# Copy pre-built assets from the build stage (vite outputs to build/)
 COPY --from=build /app/build .
 
 # Inline nginx config — TLS and host routing are handled by the ingress controller
