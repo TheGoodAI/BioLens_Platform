@@ -47,11 +47,9 @@ ENV VITE_DEV_MODE=$VITE_DEV_MODE
 ENV VITE_API_DEBUG=$VITE_API_DEBUG
 
 # ── Memory-constrained build tuning ──────────────────────────────────────────
-# • max-old-space-size  — cap V8 heap so GC triggers well before the host is
-#   exhausted (4 096 was letting Node hoard RAM until the DevOps agent crashed).
-# • max-semi-space-size — keep the nursery small so minor-GC runs more often
-#   during Rollup's transform phase, trading ~5 % speed for much lower peak RSS.
-ENV NODE_OPTIONS="--max-old-space-size=2048 --max-semi-space-size=64"
+# Previous values (4 096, then 2 048) still OOM-killed on the self-hosted agent.
+# 1 024 MB heap + tiny nursery keeps peak RSS around 1.2–1.4 GB.
+ENV NODE_OPTIONS="--max-old-space-size=1024 --max-semi-space-size=32"
 
 RUN npm run build
 

@@ -26,6 +26,8 @@ export default defineConfig({
     // Disable source-maps in the production image build — halves peak memory
     sourcemap: false,
     rollupOptions: {
+      // Limit concurrent file reads so Rollup doesn't balloon RSS
+      maxParallelFileOps: 2,
       output: {
         // Split heavy vendor deps into separate chunks so Rollup can flush
         // each independently.  Keeps peak RSS well below the 2 GB heap cap.
