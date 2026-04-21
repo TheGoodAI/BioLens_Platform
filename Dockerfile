@@ -1,12 +1,21 @@
 # syntax=docker/dockerfile:1
 # check=skip=SecretsUsedInArgOrEnv
 
+# ---- Stage 1: Build the app ----
+FROM node:20-alpine AS builder
+WORKDIR /app
+COPY package.json package-lock.json* ./
+RUN npm ci
+COPY . .
+RUN npm run build
+
+# ---- Stage 2: Serve with nginx ----
 FROM nginx:1.27-alpine
 WORKDIR /usr/share/nginx/html
 
 RUN apk add --no-cache bash curl jq && rm -rf ./*
 
-COPY build/ .
+COPY --from=builder /app/build/ .
 
 RUN printf 'server {\n\
     listen 80;\n\
