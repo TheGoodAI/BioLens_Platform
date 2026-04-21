@@ -4,7 +4,7 @@ trigger:
       - main
 
 pool:
-  name: ProtoAI-vmss
+  name: BioLens-vmss
 
 variables:
   ACR_LOGIN_SERVER: protoai.azurecr.io
