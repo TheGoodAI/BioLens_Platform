@@ -46,7 +46,7 @@ export default function Footer({
     return (
         <footer
             className={classNames(
-                `footer flex flex-auto items-center h-16 ${PAGE_CONTAINER_GUTTER_X}`,
+                `footer flex flex-auto items-center h-16 ${PAGE_CONTAINER_GUTTER_X} border-t border-gray-200 dark:border-gray-700 dark:bg-gray-900`,
                 className,
             )}
         >

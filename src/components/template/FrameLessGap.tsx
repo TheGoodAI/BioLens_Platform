@@ -6,7 +6,7 @@ export interface FrameLessGapProps extends CommonProps {
 }
 
 const FrameLessGap = ({ children, className }: FrameLessGapProps) => {
-    return <div className={classNames(className, 'p-6')}>{children}</div>
+    return <div className={classNames(className)}>{children}</div>
 }
 
 export default FrameLessGap

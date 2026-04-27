@@ -72,10 +72,11 @@ interface PatientData {
 
 interface CardProps {
   children: React.ReactNode;
+  className?: string;
 }
 
-const Card: React.FC<CardProps> = ({ children }) => (
-  <div className="bg-white rounded-lg border border-gray-200 shadow-sm p-6">
+const Card: React.FC<CardProps> = ({ children, className = '' }) => (
+  <div className={`bg-[#0d1321] rounded-lg border border-cyan-800/40 p-5 ${className}`}>
     {children}
   </div>
 );
@@ -87,22 +88,25 @@ interface VitalChartProps {
 }
 
 const VitalChart: React.FC<VitalChartProps> = ({ title, data, color }) => (
-  <div className="bg-white border border-gray-200 rounded-lg p-3">
-    <div className="flex justify-between items-center mb-2">
-      <h3 className="text-sm font-semibold text-gray-700">{title}</h3>
-      <select className="text-xs border rounded px-2 py-1 bg-gray-50">
+  <div className="bg-[#0d1321] border border-cyan-800/40 rounded-lg p-4">
+    <div className="flex justify-between items-center mb-3">
+      <h3 className="text-sm font-semibold text-gray-200">{title}</h3>
+      <select className="text-xs border border-gray-600 rounded px-2 py-1 bg-[#1a2035] text-gray-300">
         <option>24h</option>
         <option>7d</option>
       </select>
     </div>
-    <div className="h-48">
+    <div className="h-52">
       <ResponsiveContainer width="100%" height="100%">
         <LineChart data={data}>
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="time" />
-          <YAxis />
-          <Tooltip />
-          <Line type="monotone" dataKey="value" stroke={color} dot={false} />
+          <CartesianGrid strokeDasharray="3 3" stroke="#1e293b" />
+          <XAxis dataKey="time" tick={{ fill: '#6b7280', fontSize: 11 }} axisLine={{ stroke: '#1e293b' }} tickLine={false} />
+          <YAxis tick={{ fill: '#6b7280', fontSize: 11 }} axisLine={{ stroke: '#1e293b' }} tickLine={false} />
+          <Tooltip 
+            contentStyle={{ backgroundColor: '#1a2035', border: '1px solid #334155', borderRadius: '8px', color: '#e5e7eb' }}
+            labelStyle={{ color: '#9ca3af' }}
+          />
+          <Line type="monotone" dataKey="value" stroke={color} dot={false} strokeWidth={2} />
         </LineChart>
       </ResponsiveContainer>
     </div>
@@ -137,12 +141,12 @@ const BiomarkerDashboard: React.FC = () => {
   // Helper functions
   const getCRSStatus = (crsGrade: number) => {
     switch(crsGrade) {
-      case 0: return { text: 'No CRS', color: 'text-green-600' };
-      case 1: return { text: 'Grade 1 - Mild', color: 'text-yellow-600' };
-      case 2: return { text: 'Grade 2 - Moderate', color: 'text-amber-600' };
-      case 3: return { text: 'Grade 3 - Severe', color: 'text-red-600' };
-      case 4: return { text: 'Grade 4 - Life-Threatening', color: 'text-red-800' };
-      default: return { text: 'Unknown', color: 'text-gray-600' };
+      case 0: return { text: 'No CRS', color: 'text-green-400' };
+      case 1: return { text: 'Grade 1 - Mild', color: 'text-yellow-400' };
+      case 2: return { text: 'Grade 2 - Moderate', color: 'text-red-400' };
+      case 3: return { text: 'Grade 3 - Severe', color: 'text-red-500' };
+      case 4: return { text: 'Grade 4 - Life-Threatening', color: 'text-red-600' };
+      default: return { text: 'Unknown', color: 'text-gray-400' };
     }
   };
 
@@ -170,15 +174,15 @@ const BiomarkerDashboard: React.FC = () => {
 
   const generateVitalHistory = (current: number, variance: number, count: number = 10) => {
     return Array.from({ length: count }, (_, i) => ({
-      time: `${i * 2}h ago`,
-      value: current + (Math.random() - 0.5) * variance
-    })).reverse();
+      time: `${(count - i) * 2}h ago`,
+      value: Number((current + (Math.random() - 0.5) * variance).toFixed(1))
+    }));
   };
 
   if (loading || !selectedPatient) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-lg text-gray-600">
+      <div className="min-h-screen bg-[#070b14] flex items-center justify-center">
+        <div className="text-lg text-gray-400">
           {loading ? "Loading patient data..." : "No patient data available"}
         </div>
       </div>
@@ -213,14 +217,14 @@ const BiomarkerDashboard: React.FC = () => {
   ] : [];
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <nav className="bg-white border-b border-gray-200 sticky top-0 z-10">
+    <div className="min-h-screen bg-[#070b14]">
+      <nav className="bg-[#0d1321] border-b border-gray-800 sticky top-0 z-10">
         <div className="px-4">
-          <div className="flex justify-between items-center h-12">
-            <h1 className="text-lg font-bold text-blue-700">CRS Monitor</h1>
+          <div className="flex justify-between items-center h-14">
+            <h1 className="text-lg font-bold text-white">CRS Monitor</h1>
             <div className="flex items-center space-x-3">
               <select 
-                className="border rounded-md p-2 bg-white min-w-[250px]"
+                className="border border-gray-600 rounded-full px-4 py-2 bg-[#1a2035] text-gray-200 min-w-[250px] focus:outline-none focus:border-cyan-500"
                 value={selectedPatient?.Patient_ID}
                 onChange={(e) => {
                   const selected = allPatients.find(p => p.Patient_ID === e.target.value);
@@ -234,10 +238,10 @@ const BiomarkerDashboard: React.FC = () => {
                 ))}
               </select>
               <div className="relative">
-                <BellRing className="h-5 w-5 text-gray-500 hover:text-gray-600 cursor-pointer" />
+                <BellRing className="h-5 w-5 text-gray-400 hover:text-gray-200 cursor-pointer" />
                 <span className="absolute -top-1 -right-1 h-2.5 w-2.5 bg-red-500 rounded-full" />
               </div>
-              <button className="flex items-center px-3 py-1 border border-gray-300 rounded-lg text-xs font-medium text-gray-700 hover:bg-gray-50">
+              <button className="flex items-center px-3 py-1.5 border border-gray-600 rounded-lg text-xs font-medium text-gray-200 hover:bg-[#1a2035] transition-colors">
                 <UserPlus className="h-3.5 w-3.5 mr-1" />
                 <span>Assign Staff</span>
               </button>
@@ -246,11 +250,12 @@ const BiomarkerDashboard: React.FC = () => {
         </div>
       </nav>
 
-      <div className="max-w-7xl mx-auto px-4 py-6 space-y-6">
+      <div className="py-3 space-y-5">
+        {/* Filters & Export */}
         <div className="flex justify-between items-center">
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-3">
             <select 
-              className="border rounded-md p-2 bg-white"
+              className="border border-gray-600 rounded-full px-4 py-2 bg-[#0d1321] text-gray-200 text-sm focus:outline-none focus:border-cyan-500"
               value={timeRange}
               onChange={(e) => setTimeRange(e.target.value)}
             >
@@ -258,43 +263,49 @@ const BiomarkerDashboard: React.FC = () => {
               <option value="7d">Last 7 Days</option>
               <option value="30d">Last 30 Days</option>
             </select>
-            <button className="flex items-center space-x-2 px-4 py-2 border rounded-md hover:bg-gray-50 bg-white">
+            <button className="flex items-center space-x-2 px-4 py-2 border border-gray-600 rounded-full bg-[#1a2035] text-gray-200 text-sm hover:bg-[#232a42] transition-colors">
               <Filter className="h-4 w-4" />
               <span>Filter</span>
             </button>
           </div>
-          <button className="flex items-center space-x-2 px-4 py-2 border rounded-md hover:bg-gray-50 bg-white">
+          <button className="flex items-center space-x-2 px-4 py-2 border border-gray-600 rounded-lg bg-[#0d1321] text-gray-200 text-sm hover:bg-[#1a2035] transition-colors">
             <Download className="h-4 w-4" />
             <span>Export Data</span>
           </button>
         </div>
 
-        <div className="grid grid-cols-3 gap-4">
+        {/* Patient Info Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <Card>
-            <h3 className="text-sm font-medium text-gray-500">Patient Name/ID</h3>
+            <h3 className="text-xs font-medium text-gray-400 uppercase tracking-wide">Patient Name/ID</h3>
             <div className="mt-2">
-              <div className="text-2xl font-semibold text-gray-900">
+              <div className="text-2xl font-bold text-white">
                 {selectedPatient.Patient_Name}
               </div>
-              <div className="text-sm text-gray-500 mt-1">
+              <div className="text-sm text-gray-400 mt-1">
                 ID: {selectedPatient.Patient_ID}
               </div>
-              <div className="text-sm text-gray-500 mt-1">
+              <div className="text-sm text-gray-500 mt-3">
                 {selectedPatient.Age} years • {selectedPatient.Gender} • {selectedPatient.Nationality}
               </div>
             </div>
           </Card>
 
           <Card>
-            <h3 className="text-sm font-medium text-gray-500">Risk Assessment</h3>
+            <h3 className="text-xs font-medium text-gray-400 uppercase tracking-wide">Risk Assessment</h3>
             <div className="mt-2">
-              <div className="text-2xl font-semibold text-red-600">
+              <div className={`text-2xl font-bold ${
+                selectedPatient.ICANS_Grade >= 3 ? 'text-red-500' :
+                selectedPatient.ICANS_Grade >= 2 ? 'text-amber-500' :
+                selectedPatient.ICANS_Grade === 1 ? 'text-green-400' :
+                'text-green-400'
+              }`}>
                 {selectedPatient.ICANS_Grade ? `Grade ${selectedPatient.ICANS_Grade}` : 'N/A'}
               </div>
-              <div className="text-sm text-red-500 mt-1">
+              <div className="text-sm text-blue-400 mt-1">
                 Activity Level: {selectedPatient.Activity_Level}
               </div>
-              <div className="flex items-center mt-4 text-sm text-red-500">
+              <div className="flex items-center mt-3 text-sm text-red-400">
                 <Activity className="h-4 w-4 mr-1" />
                 <span>{selectedPatient.Fatigue === 'Yes' ? 'Fatigue Reported' : 'No Fatigue'}</span>
               </div>
@@ -302,12 +313,17 @@ const BiomarkerDashboard: React.FC = () => {
           </Card>
 
           <Card>
-            <h3 className="text-sm font-medium text-gray-500">CRS Status</h3>
+            <h3 className="text-xs font-medium text-gray-400 uppercase tracking-wide">CRS Status</h3>
             <div className="mt-2">
-              <div className={`text-2xl font-semibold ${crsStatus.color}`}>
+              <div className={`text-2xl font-bold ${
+                selectedPatient.CRS >= 3 ? 'text-red-500' :
+                selectedPatient.CRS === 2 ? 'text-red-400' :
+                selectedPatient.CRS === 1 ? 'text-yellow-400' :
+                'text-green-400'
+              }`}>
                 {crsStatus.text}
               </div>
-              <div className="text-sm text-gray-500 mt-1">
+              <div className="text-sm text-gray-400 mt-1">
                 Symptoms: {[
                   selectedPatient.Chills === 'Yes' && 'Chills',
                   selectedPatient.Headache === 'Yes' && 'Headache',
@@ -318,21 +334,22 @@ const BiomarkerDashboard: React.FC = () => {
           </Card>
         </div>
 
-        <div className="grid grid-cols-4 gap-4">
+        {/* Vital Signs */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {vitals.map(vital => (
-            <div key={vital.label} className="bg-white rounded-lg border border-gray-200 p-4">
-              <div className="text-sm text-gray-500">{vital.label}</div>
-              <div className={`text-xl font-bold mt-1 ${
-                vital.status === 'up' ? 'text-red-500' :
-                vital.status === 'down' ? 'text-blue-500' :
-                'text-green-500'
+            <div key={vital.label} className="bg-[#0d1321] rounded-lg border border-cyan-800/40 p-4">
+              <div className="text-xs text-gray-400 uppercase tracking-wide">{vital.label}</div>
+              <div className={`text-2xl font-bold mt-2 ${
+                vital.status === 'up' ? 'text-red-400' :
+                vital.status === 'down' ? 'text-red-400' :
+                'text-cyan-400'
               }`}>
                 {vital.value}
               </div>
-              <div className={`text-xs mt-1 ${
-                vital.status === 'up' ? 'text-red-500' :
-                vital.status === 'down' ? 'text-blue-500' :
-                'text-green-500'
+              <div className={`text-xs mt-2 flex items-center ${
+                vital.status === 'up' ? 'text-red-400' :
+                vital.status === 'down' ? 'text-blue-400' :
+                'text-green-400'
               }`}>
                 {vital.status === 'up' ? '↑ Above normal' :
                  vital.status === 'down' ? '↓ Below normal' :
@@ -342,7 +359,8 @@ const BiomarkerDashboard: React.FC = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-2 gap-4">
+        {/* Trend Charts */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <VitalChart 
             title="Temperature Trend" 
             data={temperatureHistory} 

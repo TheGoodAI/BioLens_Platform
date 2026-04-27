@@ -125,7 +125,7 @@ const PageContainer = (props: PageContainerProps) => {
 
     const defaultClass = 'h-full flex flex-auto flex-col justify-between'
     const pageContainerDefaultClass =
-        'page-container relative h-full flex flex-auto flex-col'
+        'page-container relative h-full flex flex-auto flex-col flex-1'
     const pageContainerGutterClass = `${PAGE_CONTAINER_GUTTER_X} ${PAGE_CONTAINER_GUTTER_Y}`
 
     return (
@@ -152,7 +152,7 @@ const PageContainer = (props: PageContainerProps) => {
                             'bg-white dark:bg-gray-900',
                     )}
                 >
-                    <main className="h-full">
+                    <main className="h-full flex flex-auto flex-col">
                         <div
                             className={classNames(
                                 pageContainerDefaultClass,
