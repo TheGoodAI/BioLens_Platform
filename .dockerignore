@@ -47,6 +47,13 @@ docker-compose*.yml
 .gitlab-ci.yml
 .travis.yml
 
+# Python/virtual environments
+env/
+venv/
+.venv/
+__pycache__/
+*.pyc
+
 # Misc
 .husky
 .commitlintrc*
