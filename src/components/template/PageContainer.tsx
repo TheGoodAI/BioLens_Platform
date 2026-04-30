@@ -152,7 +152,7 @@ const PageContainer = (props: PageContainerProps) => {
                             'bg-white dark:bg-gray-900',
                     )}
                 >
-                    <main className="h-full flex flex-auto flex-col">
+                    <main className="h-full flex flex-auto flex-col p-4">
                         <div
                             className={classNames(
                                 pageContainerDefaultClass,

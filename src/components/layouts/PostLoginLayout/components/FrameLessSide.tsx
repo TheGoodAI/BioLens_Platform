@@ -110,7 +110,7 @@ const FrameLessSide = ({ children }: CommonProps) => {
                                 </>
                             }
                         />
-                        <div className="h-full flex flex-auto flex-col">
+                        <div className="h-full flex flex-auto flex-col p-4">
                             {children}
                         </div>
                     </div>

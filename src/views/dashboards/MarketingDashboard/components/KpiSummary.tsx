@@ -96,7 +96,7 @@ const VitalChart: React.FC<VitalChartProps> = ({ title, data, color }) => (
         <option>7d</option>
       </select>
     </div>
-    <div className="h-52">
+    <div className="h-72">
       <ResponsiveContainer width="100%" height="100%">
         <LineChart data={data}>
           <CartesianGrid strokeDasharray="3 3" stroke="#1e293b" />
@@ -250,7 +250,7 @@ const BiomarkerDashboard: React.FC = () => {
         </div>
       </nav>
 
-      <div className="py-3 space-y-5">
+      <div className="p-4 space-y-5">
         {/* Filters & Export */}
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-3">
@@ -323,7 +323,7 @@ const BiomarkerDashboard: React.FC = () => {
               }`}>
                 {crsStatus.text}
               </div>
-              <div className="text-sm text-gray-400 mt-1">
+              <div className="text-sm text-gray-400 mt-3">
                 Symptoms: {[
                   selectedPatient.Chills === 'Yes' && 'Chills',
                   selectedPatient.Headache === 'Yes' && 'Headache',
@@ -337,7 +337,7 @@ const BiomarkerDashboard: React.FC = () => {
         {/* Vital Signs */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {vitals.map(vital => (
-            <div key={vital.label} className="bg-[#0d1321] rounded-lg border border-cyan-800/40 p-4">
+            <div key={vital.label} className="bg-[#0d1321] rounded-lg border border-cyan-800/40 p-4 flex flex-col gap-4">
               <div className="text-xs text-gray-400 uppercase tracking-wide">{vital.label}</div>
               <div className={`text-2xl font-bold mt-2 ${
                 vital.status === 'up' ? 'text-red-400' :

@@ -83,8 +83,8 @@ const BiomarkerDashboard: React.FC = () => {
 
   if (loading || !selectedPatient) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-50">
-        <h1 className="text-xl text-gray-600">
+      <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-950">
+        <h1 className="text-xl text-gray-600 dark:text-gray-400">
           {loading ? "Loading patient data..." : "No data available"}
         </h1>
       </div>
@@ -111,12 +111,12 @@ const BiomarkerDashboard: React.FC = () => {
   }));
 
   return (
-    <div className="bg-gray-50 min-h-screen">
-      <header className="bg-white shadow p-4">
+    <div className="bg-gray-50 dark:bg-gray-950 min-h-screen">
+      <header className="bg-white dark:bg-gray-900 shadow dark:shadow-none dark:border-b dark:border-gray-700 p-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-blue-700">CRS Dashboard</h1>
+          <h1 className="text-2xl font-bold text-blue-700 dark:text-blue-400">CRS Dashboard</h1>
           <select
-            className="border rounded-md p-2"
+            className="border dark:border-gray-700 rounded-md p-2 dark:bg-gray-800 dark:text-gray-200"
             value={selectedPatient?.Patient_ID}
             onChange={(e) => {
               const selected = allPatients.find((p) => p.Patient_ID === e.target.value);
@@ -133,8 +133,8 @@ const BiomarkerDashboard: React.FC = () => {
       </header>
       <main className="max-w-7xl mx-auto p-4 space-y-8">
         <section className="grid grid-cols-3 gap-4">
-          <div className="bg-white p-4 rounded shadow">
-            <h3 className="font-semibold text-gray-700">Gender Distribution</h3>
+          <div className="bg-white dark:bg-gray-900 p-4 rounded shadow dark:shadow-none dark:border dark:border-gray-700">
+            <h3 className="font-semibold text-gray-700 dark:text-gray-200">Gender Distribution</h3>
             <ResponsiveContainer width="100%" height={200}>
               <PieChart>
                 <Pie
@@ -149,57 +149,57 @@ const BiomarkerDashboard: React.FC = () => {
                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                   ))}
                 </Pie>
-                <Tooltip />
-                <Legend />
+                <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: '1px solid #374151', borderRadius: '8px', color: '#e5e7eb' }} />
+                <Legend wrapperStyle={{ color: '#9ca3af' }} />
               </PieChart>
             </ResponsiveContainer>
           </div>
-          <div className="bg-white p-4 rounded shadow">
-            <h3 className="font-semibold text-gray-700">Symptom Occurrences</h3>
+          <div className="bg-white dark:bg-gray-900 p-4 rounded shadow dark:shadow-none dark:border dark:border-gray-700">
+            <h3 className="font-semibold text-gray-700 dark:text-gray-200">Symptom Occurrences</h3>
             <ResponsiveContainer width="100%" height={200}>
               <BarChart data={symptomOccurrences}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="symptom" />
-                <YAxis />
-                <Tooltip />
+                <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
+                <XAxis dataKey="symptom" tick={{ fill: '#9ca3af' }} />
+                <YAxis tick={{ fill: '#9ca3af' }} />
+                <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: '1px solid #374151', borderRadius: '8px', color: '#e5e7eb' }} />
                 <Bar dataKey="count" fill="#8884d8" />
               </BarChart>
             </ResponsiveContainer>
           </div>
-          <div className="bg-white p-4 rounded shadow">
-            <h3 className="font-semibold text-gray-700">Age Distribution</h3>
+          <div className="bg-white dark:bg-gray-900 p-4 rounded shadow dark:shadow-none dark:border dark:border-gray-700">
+            <h3 className="font-semibold text-gray-700 dark:text-gray-200">Age Distribution</h3>
             <ResponsiveContainer width="100%" height={200}>
               <BarChart data={ageDistribution}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="age" />
-                <YAxis />
-                <Tooltip />
+                <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
+                <XAxis dataKey="age" tick={{ fill: '#9ca3af' }} />
+                <YAxis tick={{ fill: '#9ca3af' }} />
+                <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: '1px solid #374151', borderRadius: '8px', color: '#e5e7eb' }} />
                 <Bar dataKey="age" fill="#82ca9d" />
               </BarChart>
             </ResponsiveContainer>
           </div>
         </section>
         <section className="grid grid-cols-2 gap-4">
-          <div className="bg-white p-4 rounded shadow">
-            <h3 className="font-semibold text-gray-700">Temperature History</h3>
+          <div className="bg-white dark:bg-gray-900 p-4 rounded shadow dark:shadow-none dark:border dark:border-gray-700">
+            <h3 className="font-semibold text-gray-700 dark:text-gray-200">Temperature History</h3>
             <ResponsiveContainer width="100%" height={200}>
               <LineChart data={temperatureHistory}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="time" />
-                <YAxis />
-                <Tooltip />
+                <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
+                <XAxis dataKey="time" tick={{ fill: '#9ca3af' }} />
+                <YAxis tick={{ fill: '#9ca3af' }} />
+                <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: '1px solid #374151', borderRadius: '8px', color: '#e5e7eb' }} />
                 <Line type="monotone" dataKey="value" stroke="#ef4444" />
               </LineChart>
             </ResponsiveContainer>
           </div>
-          <div className="bg-white p-4 rounded shadow">
-            <h3 className="font-semibold text-gray-700">Heart Rate History</h3>
+          <div className="bg-white dark:bg-gray-900 p-4 rounded shadow dark:shadow-none dark:border dark:border-gray-700">
+            <h3 className="font-semibold text-gray-700 dark:text-gray-200">Heart Rate History</h3>
             <ResponsiveContainer width="100%" height={200}>
               <LineChart data={heartRateHistory}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="time" />
-                <YAxis />
-                <Tooltip />
+                <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
+                <XAxis dataKey="time" tick={{ fill: '#9ca3af' }} />
+                <YAxis tick={{ fill: '#9ca3af' }} />
+                <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: '1px solid #374151', borderRadius: '8px', color: '#e5e7eb' }} />
                 <Line type="monotone" dataKey="value" stroke="#3b82f6" />
               </LineChart>
             </ResponsiveContainer>
